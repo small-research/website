@@ -1,0 +1,24 @@
+project:
+  type: website
+  resources:
+    - "*.jpg"
+    - "*.jpeg"
+    - "*.png"
+
+website:
+  title: "Statistical Machine Learning Lab"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - people.qmd      
+      - research.qmd
+      - events.qmd
+      - contact.qmd
+
+format:
+  html:
+    theme: simplex
+    css: styles.css
+    toc: true
+    fontsize: 1.2em

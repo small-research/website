@@ -1,0 +1,31 @@
+-
+  name: "Marcos O. Prates"
+  affiliation: "DEST-UFMG"
+  affiliation_link: "https://www.est.ufmg.br/"
+  picture: "./pictures/marcos_prates.png"
+  url: "https://www.curso-r.com/blog/"
+
+-
+  name: "Tiago Botari"
+  affiliation: "ICMC-USP"
+  affiliation_link: "https://www.icmc.usp.br/"
+  picture: "./pictures/botari.jpeg"
+  url: "https://scholar.google.com/citations?user=6UiIgzgAAAAJ&hl=en&oi=ao"
+
+-
+  name: "Tiago M. Santos"
+  affiliation: "Insper"
+  affiliation_link: "https://www.insper.edu.br/"
+  picture: "./pictures/santos.jpg"
+  url: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4464645E6"
+  
+-
+  name: "Julio A. Z. Trecenti"
+  affiliation: "ABJ"
+  affiliation_link: "http://abj.org.br/"
+  picture: "./pictures/trecenti.jpg"
+  url: "https://www.linkedin.com/in/jtrecenti/?originalSubdomain=br"
+  
+  
+    
+

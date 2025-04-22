@@ -1,0 +1,82 @@
+---
+title: "Research"
+execute:
+  echo: false
+jupyter: python3
+---
+
+
+<center>
+![](tweet.png){width=700px}
+</center>
+
+Our research covers several topics,
+some of which are highlighted below.
+
+* **Improved domain shift methods.** 
+Most prediction methods assume that the sample that is used to train the model
+has the same distribution as the sample one wishes to predict.
+However, such an assumption is often unreasonable. 
+We develop methods that are able to improve predictions in such settings.
+* **Nonparametric inference in high dimensions.**
+Because of the large volume of data available today,
+in several applications nonparametric methods have been gaining attention,
+since they allow one to make less assumptions about the data generating process.
+We are interested in developing nonparametric methods that 
+can be used for settings where the number of covariates is also large.
+This poses several interesting computational and statistical problems that 
+we address in our research.
+* **Interpretability and efficiency in hypothesis tests.**
+Hypothesis testing is a very common and widespread statistical tool. Unfortunately, such methodology still presents several challenges to statisticians and practitioners. For example, if A and B are two null hypothesis such that A implies B, there exist tests that, based on the same data, don’t reject A and reject B. Such outcomes are generally inconvenient to statisticians (who want to communicate the results to practitioners in a simple fashion) and non-statisticians (confused by conflicting pieces of information). Our work focuses on investigating how far one can have tests that are coherent in a logical sense, but that also have good statistical performance. We have also been developing **agnostic hypothesis tests**, in which one can accept, reject or remain agnostic with respect to a given hypothesis.ta.
+In most problems, solutions that are only useful if they are easy to interpret.
+* **Bayesian methods.**
+Bayesian methods are known to 
+provide improved solutions for several
+prediction problems because they offer meningful regularization
+based on prior information. We have been applying Bayesian methods
+to solve many statistical and machine learning problems.
+* **Foundations of statistics.**
+Understanding the foundations of statistics
+is key to developing meaningful applications.
+
+Here is a list of our papers.
+
+
+
+
+```{python}
+import pandas as pd
+from IPython.display import display, HTML
+
+def print_paper_table():
+    # Lê o arquivo CSV
+    paper_table = pd.read_csv("references.csv")
+    
+    # Renomeia colunas
+    paper_table = paper_table.rename(columns={'Publication year': 'year', 'Proceedings title': 'p.title'})
+    
+    # Filtra e ordena os dados
+    paper_table = paper_table[paper_table['year'] > 2014].sort_values(by='year', ascending=False)
+    
+    # Cria a coluna de conteúdo formatada em HTML
+    paper_table['content'] = (
+        paper_table['Authors'] + 
+        ". <b>" + paper_table['Title'] + 
+        "</b>. " + paper_table['Journal'].fillna('') + 
+        paper_table['p.title'].fillna('') + "."
+    )
+    
+    # Gera o HTML da tabela (sem paginação, como pageLength = -1 no R)
+    html_table = "<table style='width:100%; text-align:left;'>"
+    for _, row in paper_table.iterrows():
+        html_table += f"<tr><td>{int(row['year'])}</td><td>{row['content']}</td></tr>"
+    html_table += "</table>"
+    
+    display(HTML(html_table))
+
+```
+
+
+```{python}
+ print_paper_table()
+```

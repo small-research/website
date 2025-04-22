@@ -1,0 +1,78 @@
+---
+title: "People"
+execute:
+  echo: false
+jupyter: python3
+---
+
+
+
+```{python}
+import pandas as pd
+import yaml
+from IPython.display import display, HTML
+import numpy as np
+
+def add_html_link(url, content, target="_blank"):
+    return f"<a href='{url}' target='{target}'>{content}</a>"
+
+def print_member_table(path, num_cols=3):
+    # Lê o arquivo YAML
+    with open(path, 'r') as file:
+        data = yaml.safe_load(file)
+    
+    # Transforma em DataFrame
+    member_table = pd.DataFrame(data)
+    
+    # Cria a coluna de conteúdo com HTML
+    member_table['content'] = member_table.apply(
+        lambda row: f"""
+        <center>
+        <img border='0' src='./{row['picture']}' width='200'><br>
+        {add_html_link(row['url'], row['name'])}<br>
+        {add_html_link(row['affiliation_link'], row['affiliation'])}
+        </center>
+        """, axis=1
+    )
+    
+    # Completa a tabela para ser múltiplo de num_cols
+    nn = len(member_table)
+    padding = (num_cols - (nn % num_cols)) % num_cols
+    member_table = pd.concat([member_table, pd.DataFrame({'content': [''] * padding})], ignore_index=True)
+    
+    # Reorganiza em matriz
+    content_matrix = member_table['content'].values.reshape(-1, num_cols)
+    content_df = pd.DataFrame(content_matrix)
+    
+    # Gera o HTML da tabela
+    html_table = "<table style='width:100%; text-align:center;'>"
+    for _, row in content_df.iterrows():
+        html_table += "<tr>" + "".join(f"<td>{cell}</td>" for cell in row) + "</tr>"
+    html_table += "</table>"
+    
+    display(HTML(html_table))
+```
+
+<!-- # Faculty -->
+
+```{python}
+print_member_table("people/faculty.yaml")
+```
+
+# Collaborators
+
+```{python}
+print_member_table("people/collaborators.yaml")
+```
+
+# Students
+
+```{python}
+print_member_table("people/students.yaml")
+```
+
+# Alumni
+
+```{python}
+print_member_table("people/alumni.yaml")
+```
