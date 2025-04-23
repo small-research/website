@@ -4,7 +4,7 @@ This repository contains the source files and code for editing and maintaining t
 
 ## Instructions
 
-- Download the `.bib` file from the [SMALL Google Scholar page](https://scholar.google.com).
+- Download the `.bib` file from the [SMALL Google Scholar page](https://scholar.google.com/citations?user=MGrbI2UAAAAJ&hl=pt-BR).
 - Convert the `.bib` file to `.csv` using [this online BibTeX to CSV converter](https://www.bibtex.com/c/bibtex-to-csv-converter/).
 - To publish the website on GitHub Pages:
   1. Navigate to the directory containing the `.qmd` files.
