@@ -33,5 +33,5 @@ You can install the dependencies using one of the following methods:
   ```
   Then activate it:
   ```bash
-  conda activate <env_name>
+  conda activate small_website
   ```
