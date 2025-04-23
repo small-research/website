@@ -15,10 +15,23 @@ This repository contains the source files and code for editing and maintaining t
 
 ## Dependencies
 
-- Before publishing, ensure all required Python packages are installed. These are specified in the `pyproject.toml` file.
-- Both `research.qmd` and `people.qmd` include embedded Python scripts that read data from external files.
-- You can also use the `requirements.txt` file to set up a Conda environment. Convert it using the [`pip2yml`](https://pypi.org/project/pip2yml/) package:
-  ```bash
-  pip2yml -s --no-pin requirements.txt > environment.yml
-  ```
+Before publishing, ensure all required Python packages are installed. These are specified in the `pyproject.toml` file. Both `research.qmd` and `people.qmd` include embedded Python scripts that read data from external sources.
 
+You can install the dependencies using one of the following methods:
+- **Using `pip`**:
+  ```bash
+  pip install -r requirements.txt
+  ```
+- **Using `poetry`**:
+  ```bash
+  poetry install
+  ```
+- **Using `conda`**:
+  Create the environment:
+  ```bash
+  conda env create -f small_website.yml
+  ```
+  Then activate it:
+  ```bash
+  conda activate <env_name>
+  ```
