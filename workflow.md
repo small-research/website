@@ -1,0 +1,4 @@
+- Download the `.bib` file from SMALL's Google Scholar page.
+- Convert the `.bib` file to `.csv` using [this online converter](https://www.bibtex.com/c/bibtex-to-csv-converter/).
+- To publish the website on GitHub Pages, navigate to the folder containing the `.qmd` files and run `quarto publish` in the terminal.
+- **Note:** You need to install the Python packages listed in the `pyproject.toml` file to successfully publish the website. Both `research.qmd` and `people.qmd` use embedded Python scripts to fetch data from external files.
