@@ -52,24 +52,20 @@ def print_paper_table():
     # Lê o arquivo CSV
     paper_table = pd.read_csv("references.csv")
     
-    # Renomeia colunas
-    paper_table = paper_table.rename(columns={'Publication year': 'year', 'Proceedings title': 'p.title'})
-    
     # Filtra e ordena os dados
-    paper_table = paper_table[paper_table['year'] > 2014].sort_values(by='year', ascending=False)
+    paper_table = paper_table[paper_table['Year'] > 2014].sort_values(by='Year', ascending=False)
     
     # Cria a coluna de conteúdo formatada em HTML
     paper_table['content'] = (
         paper_table['Authors'] + 
         ". <b>" + paper_table['Title'] + 
-        "</b>. " + paper_table['Journal'].fillna('') + 
-        paper_table['p.title'].fillna('') + "."
+        "</b>. " + paper_table['Publication'].fillna('') 
     )
     
     # Gera o HTML da tabela (sem paginação, como pageLength = -1 no R)
     html_table = "<table style='width:100%; text-align:left;'>"
     for _, row in paper_table.iterrows():
-        html_table += f"<tr><td>{int(row['year'])}</td><td>{row['content']}</td></tr>"
+        html_table += f"<tr><td>{int(row['Year'])}</td><td>{row['content']}</td></tr>"
     html_table += "</table>"
     
     display(HTML(html_table))
