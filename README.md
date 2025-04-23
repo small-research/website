@@ -24,7 +24,7 @@ You can install the dependencies using one of the following methods:
   ```
 - **Using `poetry`**:
   ```bash
-  poetry install
+  poetry update
   ```
 - **Using `conda`**:
   Create the environment:
