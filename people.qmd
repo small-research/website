@@ -23,6 +23,8 @@ def print_member_table(path, num_cols=3):
     
     # Transforma em DataFrame
     member_table = pd.DataFrame(data)
+
+    member_table = member_table.sort_values(by=["name"])
     
     # Cria a coluna de conteúdo com HTML
     member_table['content'] = member_table.apply(
