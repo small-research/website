@@ -26,6 +26,12 @@
   picture: "./pictures/trecenti.jpg"
   url: "https://www.linkedin.com/in/jtrecenti/?originalSubdomain=br"
   
-  
+-
+  name: "Alek Fröhlich"
+  affiliation: "CSML-IIT"
+  affiliation_link: "https://csml.iit.it/"
+  picture: "./pictures/alek.jpeg"
+  url: "https://alekfrohlich.github.io/"
     
+
 
