@@ -6,9 +6,9 @@ jupyter: python3
 ---
 
 
-<center>
-![](tweet.png){width=700px}
-</center>
+<!-- <center> -->
+<!-- ![](tweet.png){width=700px} -->
+<!-- </center> -->
 
 Our research covers several topics,
 some of which are highlighted below.
@@ -39,21 +39,24 @@ to solve many statistical and machine learning problems.
 Understanding the foundations of statistics
 is key to developing meaningful applications.
 
-Here is a list of our papers.
 
-
-
+Here is a list of our papers from the last 5 years — the complete list can be downloaded <a href="https://github.com/small-research/website/raw/main/references.csv" download>here</a>, and the corresponding BibTeX entries are available <a href="https://github.com/small-research/website/raw/main/references.bib" download>here</a>.
 
 ```{python}
 import pandas as pd
 from IPython.display import display, HTML
+from datetime import datetime
+
+
+current_year = int(datetime.now().year)
+initial_date = current_year - 5
 
 def print_paper_table():
     # Lê o arquivo CSV
     paper_table = pd.read_csv("references.csv")
     
     # Filtra e ordena os dados
-    paper_table = paper_table[paper_table['Year'] > 2014].sort_values(by='Year', ascending=False)
+    paper_table = paper_table[paper_table['Year'] >= initial_date].sort_values(by='Year', ascending=False)
     
     # Cria a coluna de conteúdo formatada em HTML
     paper_table['content'] = (
