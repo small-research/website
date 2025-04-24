@@ -112,3 +112,10 @@
   affiliation_link: "https://www.icmc.usp.br/"
   picture: "./pictures/guilherme_soares.png"
   url: "linkedin.com/in/guipsoares"
+
+-
+  name: "Flavia Castro Motta"
+  affiliation: "AEC-University of Urbana-Champaign"
+  affiliation_link: https://ace.illinois.edu/
+  picture: "./pictures/flavia_motta.jpg"
+  url: "https://lemann.illinois.edu/flavia-castro-motta"
