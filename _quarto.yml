@@ -15,6 +15,9 @@ website:
       - research.qmd
       - events.qmd
       - contact.qmd
+    tools:
+      - icon: github
+        href: https://github.com/small-research
 
 format:
   html:
