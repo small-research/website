@@ -15,10 +15,10 @@
 
 -
   name: "Gilson Yuuji Shimizu"
-  affiliation: "DEs-UFSCar"
-  affiliation_link: "http://www.des.ufscar.br/"
-  picture: "./pictures/shimizu.jpg"
-  url: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4705980E5"
+  affiliation: "Centro de Tecnologia da Informação Renato Archer"
+  affiliation_link: "https://www.gov.br/cti/pt-br"
+  picture: "./pictures/no_pic.jpg" 
+  url: "http://lattes.cnpq.br/7533681983634233"
 
 -
   name: "Felipe Hernandez Bisca"
