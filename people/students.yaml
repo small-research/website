@@ -20,15 +20,12 @@
   picture: "./pictures/joao_pirola.jpeg"
   url: "https://www.linkedin.com/in/jo%C3%A3o-pedro-pirola-86b5a7224?originalSubdomain=br"
 
-
 -
   name: "João Victor Russo Izzi"
   affiliation: "DEs-UFSCar"
   affiliation_link: "http://www.des.ufscar.br/"
   picture: "./pictures/joao_izzi.jpeg"
   url: "http://lattes.cnpq.br/9740934146649608"
-
-
 
 -
   name: "Lucas Sala"
@@ -67,5 +64,23 @@
   picture: "./pictures/tiago_melo.png"
   url: ""
 
+-
+  name: "Vagner Silva Santos"
+  affiliation: "DEs-UFSCar"
+  affiliation_link: "https://www.des.ufscar.br/"
+  picture: "./pictures/vagnao.jpg"
+  url: "http://lattes.cnpq.br/9534896027652446"
 
+-
+  name: "Bruno Marcondes e Resende"
+  affiliation: "DEs-UFSCar"
+  affiliation_link: "https://www.des.ufscar.br/"
+  picture: "./pictures/bruno_m_r.jpg"
+  url: "http://lattes.cnpq.br/6542603677110305"
 
+-
+  name: "Hellen Geremias Gatica Santos"
+  affiliation: "PIPGEs-UFSCar"
+  affiliation_link: "https://www.pipges.ufscar.br/pt-br/front-page"
+  picture: "./pictures/hellen.jpg"
+  url: "http://lattes.cnpq.br/4319629810006649"
