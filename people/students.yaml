@@ -1,12 +1,4 @@
 -
-  name: "Guilherme P. Soares"
-  affiliation: "ICMC-USP"
-  affiliation_link: "https://www.icmc.usp.br/"
-  picture: "./pictures/guilherme_soares.png"
-  url: "linkedin.com/in/guipsoares"
-
-
--
   name: "João Flávio"
   affiliation: "DEs-UFSCar"
   affiliation_link: "http://www.des.ufscar.br/"
@@ -41,13 +33,6 @@
   affiliation_link: "http://www.des.ufscar.br/"
   picture: "./pictures/luben.jpg"
   url: "https://monoxido45.github.io/"
-
--
-  name: "Mateus Borges Comito"
-  affiliation: "DEs-UFSCar"
-  affiliation_link: "https://www.df.ufscar.br/ef"
-  picture: "./pictures/mateus_borges.jpg"
-  url: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2429222Y3"
 
 -
   name: "Rodrigo Ferrari Lucas Lassance"
