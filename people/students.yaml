@@ -82,3 +82,10 @@
   affiliation_link: "https://www.pipges.ufscar.br/pt-br/front-page"
   picture: "./pictures/sabrina.jpg"
   url: "http://lattes.cnpq.br/3355343008980355"
+
+-
+  name: "Ana Paula Lopes Cavalcante"
+  affiliation: "IME-USP"
+  affiliation_link: "https://www.ime.usp.br"
+  picture: "./pictures/ana_paula_cavalcante.png"
+  url: "http://lattes.cnpq.br/9176913672109214"
