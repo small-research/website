@@ -41,7 +41,6 @@
   picture: "./pictures/lassance.jpeg"
   url: "http://lattes.cnpq.br/0144182126656286"
 
-
 -
   name: "Tiago de Melo"
   affiliation: "ISB-UFAM"
@@ -69,3 +68,10 @@
   affiliation_link: "https://www.pipges.ufscar.br/pt-br/front-page"
   picture: "./pictures/hellen.jpg"
   url: "http://lattes.cnpq.br/4319629810006649"
+
+-
+  name: "Rafaela Miglinski Lucca"  
+  affiliation: "PIPGEs-Ufscar"  
+  affiliation_link: "https://www.pipges.ufscar.br/pt-br/front-page"  
+  picture: "./pictures/rafaela_lucca.jpg"  
+  url: "http://lattes.cnpq.br/5388923248394598"
