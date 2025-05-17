@@ -16,6 +16,7 @@ import numpy as np
 def add_html_link(url, content, target="_blank"):
     return f"<a href='{url}' target='{target}'>{content}</a>"
 
+
 def print_member_table(path, num_cols=3):
     # Lê o arquivo YAML
     with open(path, 'r') as file:
@@ -30,7 +31,7 @@ def print_member_table(path, num_cols=3):
     member_table['content'] = member_table.apply(
         lambda row: f"""
         <center>
-        <img border='0' src='./{row['picture']}' width='200'><br>
+        {add_html_link(row['url'], f"<img border='0' src='./{row['picture']}' width='200'>")}<br>
         {add_html_link(row['url'], row['name'])}<br>
         {add_html_link(row['affiliation_link'], row['affiliation'])}
         </center>
