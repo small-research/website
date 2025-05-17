@@ -2,7 +2,7 @@
 title: "Statistical Machine Learning Lab"
 ---
 
-![](small.png){width=50%}
+[![](small.png){width=50%}](small.png)
 
 Statistics and Machine Learning are two fields that solve similar problems, although each of them has its own paradigm. Thus, the tools used by these communities often have a different nature. The spirit of this research group is to take the best of both worlds, combining them so as to create improved solutions to relevant real-world problems.
 
