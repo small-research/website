@@ -2,15 +2,20 @@
 title: "Events"
 ---
 
+Explore some moments from our lab's history:
 
-<center>
-![](events/figures/3_WIS_3.jpg){width=600px}
+<div style="display: flex; flex-direction: column; gap: 20px; padding-top: 10px; max-width: 800px; margin: auto;">
 
-25/11/2018: Celebration at Sujinho restaurant in São Paulo after the 3rd Workshop in Statistical Induction
-</center>
+<a href="events/2025-small/" style="color: #1a73e8; font-weight: bold; font-size: 1.1em;">
+📸 <strong>05/2025</strong> – Small Rebirth celebration
+</a>
 
-<center>
-![](events/figures/4_GEL.jpg){width=600px}
+<a href="events/2019-semester/" style="color: #1a73e8; font-weight: bold; font-size: 1.1em;">
+📸 <strong>12/2019</strong> – End-of-semester gathering
+</a>
 
-12/2019: End-of-semester celebration
-</center>
+<a href="events/2018-sujinho/" style="color: #1a73e8; font-weight: bold; font-size: 1.1em;">
+📸 <strong>11/2018</strong> – Dinner at Sujinho after the 3rd Workshop in Statistical Induction
+</a>
+
+</div>

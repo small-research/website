@@ -1,0 +1,20 @@
+---
+title: "Small Rebirth – 05/2025"
+---
+
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 10px;">
+
+  <a href="small_1.jpg" target="_blank" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+    <img src="small_1.jpg" alt="Photo 1" style="width: 100%; height: auto; display: block;">
+  </a>
+
+  <a href="small_2.jpg" target="_blank" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+    <img src="small_2.jpg" alt="Photo 2" style="width: 100%; height: auto; display: block;">
+  </a>
+
+  <a href="small_bar.jpg" target="_blank" style="display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+    <img src="small_bar.jpg" alt="Photo 3" style="width: 100%; height: auto; display: block;">
+  </a>
+
+</div>
