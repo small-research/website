@@ -68,3 +68,9 @@
   affiliation_link: "http://www.des.ufscar.br/"
   picture: "./pictures/thiago.jpg"
   url: "https://thiagorr162.github.io/"
+-
+  name: "Thomas Peron"
+  affiliation: "ICMC-USP"
+  affiliation_link: "https://www.icmc.usp.br/"
+  picture: "./pictures/thomas.jpg"
+  url: "https://tkdmperon.github.io/"
