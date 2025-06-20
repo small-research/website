@@ -123,8 +123,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#trustworthy-reliable-ai-uncertainty-interpretability-and-calibration" id="toc-trustworthy-reliable-ai-uncertainty-interpretability-and-calibration" class="nav-link active" data-scroll-target="#trustworthy-reliable-ai-uncertainty-interpretability-and-calibration">Trustworthy &amp; Reliable AI: Uncertainty, Interpretability, and Calibration</a></li>
+  <li><a href="#core-methodological-advances-in-machine-learning" id="toc-core-methodological-advances-in-machine-learning" class="nav-link" data-scroll-target="#core-methodological-advances-in-machine-learning">Core Methodological Advances in Machine Learning</a></li>
+  <li><a href="#interdisciplinary-impact-ai-in-action" id="toc-interdisciplinary-impact-ai-in-action" class="nav-link" data-scroll-target="#interdisciplinary-impact-ai-in-action">Interdisciplinary Impact: AI in Action</a></li>
+  <li><a href="#bayesian-foundations-and-logical-coherence" id="toc-bayesian-foundations-and-logical-coherence" class="nav-link" data-scroll-target="#bayesian-foundations-and-logical-coherence">Bayesian Foundations and Logical Coherence</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -148,19 +157,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- <center> -->
-<!-- ![](tweet.png){width=700px} -->
-<!-- </center> -->
-<p>Our research covers several topics, some of which are highlighted below.</p>
+<p>At the <strong>SMaLL</strong> research group, our work lies at the intersection of statistics, machine learning, and artificial intelligence. We are driven by a dual mission: to push the boundaries of AI by developing novel, powerful, and principled methods, and to solve pressing real-world problems across a range of scientific and societal domains.</p>
+<p>Our research is grounded in a deep understanding of statistical theory, which allows us to build machine learning models that are not only accurate but also reliable, interpretable, and robust. We focus on three core areas: developing trustworthy AI, advancing core ML methodologies, and applying these innovations to achieve interdisciplinary impact.</p>
+<section id="trustworthy-reliable-ai-uncertainty-interpretability-and-calibration" class="level3">
+<h3 class="anchored" data-anchor-id="trustworthy-reliable-ai-uncertainty-interpretability-and-calibration">Trustworthy &amp; Reliable AI: Uncertainty, Interpretability, and Calibration</h3>
+<p>A central theme of our research is moving beyond simple point predictions to create AI systems that understand and communicate their own uncertainty. We believe this is essential for applications in science, medicine, and beyond.</p>
 <ul>
-<li><strong>Improved domain shift methods.</strong> Most prediction methods assume that the sample that is used to train the model has the same distribution as the sample one wishes to predict. However, such an assumption is often unreasonable. We develop methods that are able to improve predictions in such settings.</li>
-<li><strong>Nonparametric inference in high dimensions.</strong> Because of the large volume of data available today, in several applications nonparametric methods have been gaining attention, since they allow one to make less assumptions about the data generating process. We are interested in developing nonparametric methods that can be used for settings where the number of covariates is also large. This poses several interesting computational and statistical problems that we address in our research.</li>
-<li><strong>Interpretability and efficiency in hypothesis tests.</strong> Hypothesis testing is a very common and widespread statistical tool. Unfortunately, such methodology still presents several challenges to statisticians and practitioners. For example, if A and B are two null hypothesis such that A implies B, there exist tests that, based on the same data, don’t reject A and reject B. Such outcomes are generally inconvenient to statisticians (who want to communicate the results to practitioners in a simple fashion) and non-statisticians (confused by conflicting pieces of information). Our work focuses on investigating how far one can have tests that are coherent in a logical sense, but that also have good statistical performance. We have also been developing <strong>agnostic hypothesis tests</strong>, in which one can accept, reject or remain agnostic with respect to a given hypothesis.ta. In most problems, solutions that are only useful if they are easy to interpret.</li>
-<li><strong>Bayesian methods.</strong> Bayesian methods are known to provide improved solutions for several prediction problems because they offer meningful regularization based on prior information. We have been applying Bayesian methods to solve many statistical and machine learning problems.</li>
-<li><strong>Foundations of statistics.</strong> Understanding the foundations of statistics is key to developing meaningful applications.</li>
+<li><p><strong>Uncertainty Quantification &amp; Conformal Prediction</strong>:<br>
+We develop cutting-edge techniques for creating statistically valid prediction intervals and confidence sets. Our work, including methods like <strong>CD-split</strong> and <strong>EPICSCore</strong>, provides rigorous, assumption-free uncertainty guarantees via conformal methods, even for complex, high-dimensional data.</p></li>
+<li><p><strong>Interpretability and Explainable AI (XAI)</strong>:<br>
+We design methods to open the “black box” of complex models like neural networks. Our work on meaningful local explanations (e.g., <strong>MeLIME</strong>, <strong>RFFNet</strong>, and <strong>NLS</strong>) helps users understand why a model makes a particular decision, fostering trust and enabling model debugging.</p></li>
+<li><p><strong>Model Diagnostics and Calibration</strong>:<br>
+We create tools for rigorously validating and diagnosing machine learning models. This includes techniques for likelihood-free inference (e.g., <strong>WALDO</strong>, <strong>LF2I</strong>) and diagnostics for conditional density models (<strong>LaDaR</strong>), ensuring reliable and well-calibrated probabilistic outputs.</p></li>
 </ul>
+</section>
+<section id="core-methodological-advances-in-machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="core-methodological-advances-in-machine-learning">Core Methodological Advances in Machine Learning</h3>
+<p>Our foundational work aims to create more flexible, powerful, and efficient learning algorithms.</p>
+<ul>
+<li><p><strong>Conditional Density Estimation (CDE)</strong>:<br>
+A cornerstone of our research is the development of nonparametric methods for estimating full outcome distributions given features. Our <strong>FlexCode</strong> procedure, used by the Vera C. Rubin Observatory, is one such example applied in astronomy and beyond.</p></li>
+<li><p><strong>Network Science &amp; Graph-based Learning</strong>:<br>
+We develop methods for community detection, hypothesis testing on graphs, and network modeling, with applications ranging from EEG brain data to social networks.</p></li>
+<li><p><strong>High-Dimensional &amp; Nonparametric Methods</strong>:<br>
+We specialize in “large ( p ), small ( n )” problems, using spectral series, wavelets, and kernel methods. We also design efficient algorithms like <strong>ExactBoost</strong> and <strong>BlockBoost</strong> for challenging ML tasks.</p></li>
+<li><p><strong>Modern AI Architectures</strong>:<br>
+We contribute to model ensembling (<strong>NN-Stacking</strong>), scalable kernel methods (<strong>RFFNet</strong>), and the use of variational autoencoders for high-dimensional hypothesis testing.</p></li>
+</ul>
+</section>
+<section id="interdisciplinary-impact-ai-in-action" class="level3">
+<h3 class="anchored" data-anchor-id="interdisciplinary-impact-ai-in-action">Interdisciplinary Impact: AI in Action</h3>
+<p>We are passionate about applying our methods to solve concrete problems. Our collaborations span:</p>
+<ul>
+<li><p><strong>Astronomy &amp; Cosmology</strong>:<br>
+Photo-z estimation, galaxy classification, and likelihood-free cosmological inference.</p></li>
+<li><p><strong>Healthcare &amp; Medicine</strong>:<br>
+Predicting mortality, diagnosing dementia and Parkinson’s (e.g., <strong>Goalkeeper Game</strong>), modeling infectious diseases, and AI tools for breast cancer risk (<strong>PersonalizedUS</strong>).</p></li>
+<li><p><strong>Genetics &amp; Genomics</strong>:<br>
+QTL mapping, feature selection for ALS studies, and interaction detection in complex traits.</p></li>
+<li><p><strong>Ecology &amp; Environmental Science</strong>:<br>
+Biodiversity quantification, species composition analysis (<strong>LDAcov</strong>), and population modeling.</p></li>
+<li><p><strong>Law, Social Science &amp; Sports Analytics</strong>:<br>
+Quantifying legal “loss of a chance”, modeling judicial decisions, and predicting football match outcomes.</p></li>
+<li><p><strong>Materials Science</strong>:<br>
+Predicting properties of glass materials to guide new compositions, incorporating uncertainty for robust scientific inference.</p></li>
+</ul>
+</section>
+<section id="bayesian-foundations-and-logical-coherence" class="level3">
+<h3 class="anchored" data-anchor-id="bayesian-foundations-and-logical-coherence">Bayesian Foundations and Logical Coherence</h3>
+<p>Our approach is deeply Bayesian and committed to logical rigor. We believe this foundation leads to better, more coherent statistical and AI models.</p>
+<ul>
+<li><p><strong>Foundations of Inference</strong>:<br>
+We explore statistical decision theory, value of information, and imprecise probability models.</p></li>
+<li><p><strong>Logically-Consistent Hypothesis Testing</strong>:<br>
+We develop coherent frameworks for multiple hypothesis testing that avoid contradictions. Tools like <strong>REACT</strong> support interpretable and practical alternatives to p-values.</p></li>
+</ul>
+<hr>
 <p>Here is a list of our papers from the last 5 years — the complete list can be downloaded <a href="https://github.com/small-research/website/raw/main/references.csv" download="">here</a>, and the corresponding BibTeX entries are available <a href="https://github.com/small-research/website/raw/main/references.bib" download="">here</a>.</p>
-<div id="2dff85f0" class="cell" data-execution_count="2">
+<div id="2e58046f" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <tbody>
@@ -658,6 +712,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
