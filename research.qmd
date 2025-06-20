@@ -6,41 +6,76 @@ jupyter: python3
 ---
 
 
-<!-- <center> -->
-<!-- ![](tweet.png){width=700px} -->
-<!-- </center> -->
+At the **SMaLL** research group, our work lies at the intersection of statistics, machine learning, and artificial intelligence. We are driven by a dual mission: to push the boundaries of AI by developing novel, powerful, and principled methods, and to solve pressing real-world problems across a range of scientific and societal domains.
 
-Our research covers several topics,
-some of which are highlighted below.
+Our research is grounded in a deep understanding of statistical theory, which allows us to build machine learning models that are not only accurate but also reliable, interpretable, and robust. We focus on three core areas: developing trustworthy AI, advancing core ML methodologies, and applying these innovations to achieve interdisciplinary impact.
 
-* **Improved domain shift methods.** 
-Most prediction methods assume that the sample that is used to train the model
-has the same distribution as the sample one wishes to predict.
-However, such an assumption is often unreasonable. 
-We develop methods that are able to improve predictions in such settings.
-* **Nonparametric inference in high dimensions.**
-Because of the large volume of data available today,
-in several applications nonparametric methods have been gaining attention,
-since they allow one to make less assumptions about the data generating process.
-We are interested in developing nonparametric methods that 
-can be used for settings where the number of covariates is also large.
-This poses several interesting computational and statistical problems that 
-we address in our research.
-* **Interpretability and efficiency in hypothesis tests.**
-Hypothesis testing is a very common and widespread statistical tool. Unfortunately, such methodology still presents several challenges to statisticians and practitioners. For example, if A and B are two null hypothesis such that A implies B, there exist tests that, based on the same data, don’t reject A and reject B. Such outcomes are generally inconvenient to statisticians (who want to communicate the results to practitioners in a simple fashion) and non-statisticians (confused by conflicting pieces of information). Our work focuses on investigating how far one can have tests that are coherent in a logical sense, but that also have good statistical performance. We have also been developing **agnostic hypothesis tests**, in which one can accept, reject or remain agnostic with respect to a given hypothesis.ta.
-In most problems, solutions that are only useful if they are easy to interpret.
-* **Bayesian methods.**
-Bayesian methods are known to 
-provide improved solutions for several
-prediction problems because they offer meningful regularization
-based on prior information. We have been applying Bayesian methods
-to solve many statistical and machine learning problems.
-* **Foundations of statistics.**
-Understanding the foundations of statistics
-is key to developing meaningful applications.
+### Trustworthy & Reliable AI: Uncertainty, Interpretability, and Calibration
 
+A central theme of our research is moving beyond simple point predictions to create AI systems that understand and communicate their own uncertainty. We believe this is essential for applications in science, medicine, and beyond.
+
+- **Uncertainty Quantification & Conformal Prediction**:  
+  We develop cutting-edge techniques for creating statistically valid prediction intervals and confidence sets. Our work, including methods like **CD-split** and **EPICSCore**, provides rigorous, assumption-free uncertainty guarantees via conformal methods, even for complex, high-dimensional data.
+
+- **Interpretability and Explainable AI (XAI)**:  
+  We design methods to open the "black box" of complex models like neural networks. Our work on meaningful local explanations (e.g., **MeLIME**, **RFFNet**, and **NLS**) helps users understand why a model makes a particular decision, fostering trust and enabling model debugging.
+
+- **Model Diagnostics and Calibration**:  
+  We create tools for rigorously validating and diagnosing machine learning models. This includes techniques for likelihood-free inference (e.g., **WALDO**, **LF2I**) and diagnostics for conditional density models (**LaDaR**), ensuring reliable and well-calibrated probabilistic outputs.
+
+### Core Methodological Advances in Machine Learning
+
+Our foundational work aims to create more flexible, powerful, and efficient learning algorithms.
+
+- **Conditional Density Estimation (CDE)**:  
+  A cornerstone of our research is the development of nonparametric methods for estimating full outcome distributions given features. Our **FlexCode** procedure, used by the Vera C. Rubin Observatory, is one such example applied in astronomy and beyond.
+
+- **Network Science & Graph-based Learning**:  
+  We develop methods for community detection, hypothesis testing on graphs, and network modeling, with applications ranging from EEG brain data to social networks.
+
+- **High-Dimensional & Nonparametric Methods**:  
+  We specialize in “large \( p \), small \( n \)” problems, using spectral series, wavelets, and kernel methods. We also design efficient algorithms like **ExactBoost** and **BlockBoost** for challenging ML tasks.
+
+- **Modern AI Architectures**:  
+  We contribute to model ensembling (**NN-Stacking**), scalable kernel methods (**RFFNet**), and the use of variational autoencoders for high-dimensional hypothesis testing.
+
+### Interdisciplinary Impact: AI in Action
+
+We are passionate about applying our methods to solve concrete problems. Our collaborations span:
+
+- **Astronomy & Cosmology**:  
+  Photo-z estimation, galaxy classification, and likelihood-free cosmological inference.
+
+- **Healthcare & Medicine**:  
+  Predicting mortality, diagnosing dementia and Parkinson’s (e.g., **Goalkeeper Game**), modeling infectious diseases, and AI tools for breast cancer risk (**PersonalizedUS**).
+
+- **Genetics & Genomics**:  
+  QTL mapping, feature selection for ALS studies, and interaction detection in complex traits.
+
+- **Ecology & Environmental Science**:  
+  Biodiversity quantification, species composition analysis (**LDAcov**), and population modeling.
+
+- **Law, Social Science & Sports Analytics**:  
+  Quantifying legal “loss of a chance”, modeling judicial decisions, and predicting football match outcomes.
+
+- **Materials Science**:  
+  Predicting properties of glass materials to guide new compositions, incorporating uncertainty for robust scientific inference.
+
+### Bayesian Foundations and Logical Coherence
+
+Our approach is deeply Bayesian and committed to logical rigor. We believe this foundation leads to better, more coherent statistical and AI models.
+
+- **Foundations of Inference**:  
+  We explore statistical decision theory, value of information, and imprecise probability models.
+
+- **Logically-Consistent Hypothesis Testing**:  
+  We develop coherent frameworks for multiple hypothesis testing that avoid contradictions. Tools like **REACT** support interpretable and practical alternatives to p-values.
+
+---
 
 Here is a list of our papers from the last 5 years — the complete list can be downloaded <a href="https://github.com/small-research/website/raw/main/references.csv" download>here</a>, and the corresponding BibTeX entries are available <a href="https://github.com/small-research/website/raw/main/references.bib" download>here</a>.
+
+
 
 ```{python}
 import pandas as pd
