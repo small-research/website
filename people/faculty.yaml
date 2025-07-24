@@ -74,3 +74,10 @@
   affiliation_link: "https://www.icmc.usp.br/"
   picture: "./pictures/thomas.jpg"
   url: "https://tkdmperon.github.io/"
+
+-
+  name: "Victor Coscrato"
+  affiliation: "DEs-UFSCar"
+  affiliation_link: "http://www.des.ufscar.br/"
+  picture: "./pictures/coscrato.jpg"
+  url: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8153743U8"
