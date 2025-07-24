@@ -76,12 +76,12 @@
   picture: "./pictures/rafaela_lucca.jpg"  
   url: "http://lattes.cnpq.br/5388923248394598"
 
--
-  name: "Sabrina Teodoro Alberto da Silva"
-  affiliation: "PIPGEs-UFSCar"
-  affiliation_link: "https://www.pipges.ufscar.br/pt-br/front-page"
-  picture: "./pictures/sabrina.jpg"
-  url: "http://lattes.cnpq.br/3355343008980355"
+# -
+#   name: "Sabrina Teodoro Alberto da Silva"
+#   affiliation: "PIPGEs-UFSCar"
+#   affiliation_link: "https://www.pipges.ufscar.br/pt-br/front-page"
+#   picture: "./pictures/sabrina.jpg"
+#   url: "http://lattes.cnpq.br/3355343008980355"
 
 -
   name: "Ana Paula Lopes Cavalcante"
