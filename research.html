@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0764c1ac566ad5237365f28cf443dfbb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-a8ddea5ad6b594eae5b6c23066c249c7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-0764c1ac566ad5237365f28cf443dfbb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-09893c3e4b82521779a48d401728909f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-2a896cf6481954b7eae01a019eb4be0d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-09893c3e4b82521779a48d401728909f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -341,9 +341,9 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="trustworthy-reliable-ai-uncertainty-interpretability-and-calibration">Trustworthy &amp; Reliable AI: Uncertainty, Interpretability, and Calibration</h3>
 <p>A central theme of our research is moving beyond simple point predictions to create AI systems that understand and communicate their own uncertainty. We believe this is essential for applications in science, medicine, and beyond.</p>
 <ul>
-<li><p><strong>Uncertainty Quantification &amp; Conformal Prediction</strong>: We develop cutting-edge techniques for creating statistically valid prediction intervals and confidence sets. Our work, including methods like <a href="https://www.jmlr.org/papers/v23/20-797.html"><strong>CD-split</strong></a> and <a href="https://proceedings.mlr.press/v286/cruz-cabezas25a.html"><strong>EPICSCore</strong></a>, provides rigorous, assumption-free uncertainty guarantees via conformal methods, even for complex, high-dimensional data.</p></li>
+<li><p><strong>Uncertainty Quantification &amp; Conformal Prediction</strong>: We develop cutting-edge techniques for creating statistically valid prediction intervals and confidence sets. Our work, including methods like <a href="https://www.jmlr.org/papers/v23/20-797.html"><strong>CD-split</strong></a> and <a href="https://proceedings.mlr.press/v286/cruz-cabezas25a.html"><strong>EPICSCore</strong></a>, provides rigorous, assumption-free uncertainty guarantees via conformal methods, even for complex, high-dimensional data. Recent work broadens this toolkit along several axes: <a href="https://arxiv.org/abs/2603.06826"><strong>CREDO</strong></a> builds conformalized credal envelopes that separate epistemic from aleatoric uncertainty, <a href="https://arxiv.org/abs/2602.22432"><strong>LoBoost</strong></a> delivers fast model-native local intervals for gradient-boosted trees, <a href="https://arxiv.org/abs/2603.01971"><strong>LOCUS</strong></a> targets risk-aware predictions through a distribution-free loss-quantile score, and we extend valid prediction regions to <a href="https://arxiv.org/abs/2511.18141">compositional data</a> and <a href="https://arxiv.org/abs/2605.16145">skewed responses</a>.</p></li>
 <li><p><strong>Interpretability and Explainable AI (XAI)</strong>: We design methods to open the “black box” of complex models like neural networks. Our work on meaningful local explanations (e.g., <a href="https://arxiv.org/abs/2009.05818"><strong>MeLIME</strong></a>, <a href="https://arxiv.org/abs/2211.06410"><strong>RFFNet</strong></a>, and <a href="https://arxiv.org/abs/1910.05206"><strong>NLS</strong></a>) helps users understand why a model makes a particular decision, fostering trust and enabling model debugging.</p></li>
-<li><p><strong>Model Diagnostics and Calibration</strong>: We create tools for rigorously validating and diagnosing machine learning models. This includes techniques for likelihood-free inference (e.g., <a href="https://arxiv.org/abs/2205.15680"><strong>WALDO</strong></a>, <a href="https://arxiv.org/abs/2107.03920"><strong>LF2I</strong></a>) and diagnostics for conditional density models (<a href="https://arxiv.org/abs/2205.14568"><strong>LaDaR</strong></a>), ensuring reliable and well-calibrated probabilistic outputs.</p></li>
+<li><p><strong>Model Diagnostics and Calibration</strong>: We create tools for rigorously validating and diagnosing machine learning models. This includes techniques for likelihood-free inference (e.g., <a href="https://arxiv.org/abs/2205.15680"><strong>WALDO</strong></a>, <a href="https://arxiv.org/abs/2107.03920"><strong>LF2I</strong></a>) and diagnostics for conditional density models (<a href="https://arxiv.org/abs/2205.14568"><strong>LaDaR</strong></a>), ensuring reliable and well-calibrated probabilistic outputs. We are extending these ideas to generative models used as scientific simulators (<a href="https://arxiv.org/abs/2508.02602">trustworthy scientific inference</a>), to locally calibrated credible sets in simulation-based inference (<a href="https://arxiv.org/abs/2508.17077"><strong>CP4SBI</strong></a>), and to <a href="https://arxiv.org/abs/2603.11229">rare events, via diagnostic transport maps</a>.</p></li>
 </ul>
 </section>
 <section id="core-methodological-advances-in-machine-learning" class="level3">
@@ -351,7 +351,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Our foundational work aims to create more flexible, powerful, and efficient learning algorithms.</p>
 <ul>
 <li><p><strong>Conditional Density Estimation (CDE)</strong>: A cornerstone of our research is the development of nonparametric methods for estimating full outcome distributions given features. Our <a href="https://arxiv.org/abs/1704.08095"><strong>FlexCode</strong></a> procedure, used by the Vera C. Rubin Observatory, is one such example applied in astronomy and beyond. More recently, we have been benchmarking and adapting <a href="https://arxiv.org/abs/2603.26611"><strong>tabular foundation models</strong></a> for CDE, bringing this new generation of pretrained models to bear on distributional prediction.</p></li>
-<li><p><strong>Network Science &amp; Graph-based Learning</strong>: We develop methods for <a href="https://arxiv.org/abs/2303.05909">community detection</a>, <a href="https://arxiv.org/abs/1504.06478">hypothesis testing on graphs</a>, and <a href="https://arxiv.org/abs/1908.08880">network modeling</a>, with applications ranging from EEG brain data to social networks.</p></li>
+<li><p><strong>Network Science &amp; Graph-based Learning</strong>: We develop methods for <a href="https://arxiv.org/abs/2303.05909">community detection</a>, <a href="https://arxiv.org/abs/1504.06478">hypothesis testing on graphs</a>, and <a href="https://arxiv.org/abs/1908.08880">network modeling</a>, with applications ranging from EEG brain data to social networks. Current work targets weighted and sparse networks, including <a href="https://arxiv.org/abs/2502.15891">counting communities in weighted stochastic block models</a>, <a href="https://arxiv.org/abs/2411.03100">sparsity-aware models for count-weighted networks</a>, and <a href="https://arxiv.org/abs/2604.10205">normalized likelihood criteria for model selection</a>.</p></li>
 <li><p><strong>High-Dimensional &amp; Nonparametric Methods</strong>: We specialize in “large ( p ), small ( n )” problems, using spectral series, wavelets, and kernel methods. We also design efficient algorithms like <a href="https://proceedings.mlr.press/v151/csillag22a.html"><strong>ExactBoost</strong></a> and <a href="https://proceedings.mlr.press/v238/ramos24a.html"><strong>BlockBoost</strong></a> for challenging ML tasks.</p></li>
 <li><p><strong>Modern AI Architectures</strong>: We contribute to model ensembling (<a href="https://arxiv.org/abs/1906.09735"><strong>NN-Stacking</strong></a>), scalable kernel methods (<a href="https://arxiv.org/abs/2211.06410"><strong>RFFNet</strong></a>), and the use of variational autoencoders for high-dimensional hypothesis testing.</p></li>
 <li><p><strong>Causal Inference</strong>: We develop nonparametric methods for estimating causal effects from observational data, including approaches based on the <a href="https://openreview.net/forum?id=1c6A74tLOd">front-door criterion</a> for settings with unmeasured confounding.</p></li>
@@ -366,8 +366,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Genetics &amp; Genomics</strong>: <a href="https://doi.org/10.1534/genetics.115.180802">QTL mapping</a>, <a href="https://doi.org/10.3390/jpm12081330">feature selection for ALS studies</a>, and interaction detection in complex traits.</p></li>
 <li><p><strong>Ecology &amp; Environmental Science</strong>: Biodiversity quantification, species composition analysis (<a href="https://doi.org/10.1002/ece3.7626"><strong>LDAcov</strong></a>), and population modeling.</p></li>
 <li><p><strong>Law, Social Science &amp; Sports Analytics</strong>: Quantifying legal <a href="https://doi.org/10.1093/lpr/mgz010">“loss of a chance”</a>, modeling judicial decisions, and <a href="https://arxiv.org/abs/1705.04356">predicting football match outcomes</a>.</p></li>
+<li><p><strong>Computational Neuroscience</strong>: Modeling spiking activity with stochastic chains of variable-length memory: <a href="https://doi.org/10.3390/brainsci14050442">inferring effective connectivity between neurons</a>, <a href="https://arxiv.org/abs/2411.08205">consistently selecting models of functional interaction</a>, and <a href="https://doi.org/10.1007/s11571-025-10276-4">identifying astrocytic signatures in neuronal recordings</a>.</p></li>
+<li><p><strong>Insurance &amp; Actuarial Science</strong>: <a href="https://arxiv.org/abs/2504.05881">Actuarial learning for pension-fund mortality forecasting</a> and conformal prediction for <a href="https://doi.org/10.1080/02664763.2025.2567988">frequency–severity modeling</a> of insurance claims.</p></li>
 <li><p><strong>Materials Science</strong>:<br>
-Predicting properties of glass materials to guide new compositions, incorporating uncertainty for robust scientific inference.</p></li>
+Predicting properties of glass materials to guide new compositions, <a href="https://doi.org/10.1016/j.jnoncrysol.2026.124303">quantifying oxide glass similarity through learned distances</a>, <a href="https://arxiv.org/abs/2511.16366">building datasets by mining patents</a>, and <a href="https://doi.org/10.1016/j.eswa.2025.128552">automating the microscopic analysis of cement clinker</a> — always incorporating uncertainty for robust scientific inference.</p></li>
 </ul>
 </section>
 <section id="bayesian-foundations-and-logical-coherence" class="level3">
@@ -378,8 +380,8 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 <li><p><strong>Logically-Consistent Hypothesis Testing</strong>: We develop coherent frameworks for multiple hypothesis testing that avoid contradictions. Tools like <a href="https://arxiv.org/abs/2308.09112"><strong>REACT</strong></a> support interpretable and practical alternatives to p-values.</p></li>
 </ul>
 <hr>
-<p>Here is a list of our papers from the last 5 years — the complete list can be downloaded <a href="https://github.com/small-research/website/raw/main/references.csv" download="">here</a>, and the corresponding BibTeX entries are available <a href="https://github.com/small-research/website/raw/main/references.bib" download="">here</a>.</p>
-<div id="0bc5802a" class="cell" data-execution_count="2">
+<p>Here is a list of our papers from the last 5 years — the complete list can be downloaded <a href="https://github.com/small-research/website/raw/main/references.csv" download="">here</a>.</p>
+<div id="b6cd81e5" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div class="pub-search">
       <input type="search" id="pub-search-input" class="form-control" placeholder="Search by author, title, or venue..." oninput="filterPubTable()" aria-label="Search publications">
@@ -394,7 +396,7 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="even">
 <td class="pub-year">2026</td>
-<td>Valença, Raquel R; Nakazono, Lilianne; Izbicki, Rafael; Inácio, Marco Henrique de Almeida; da Silva, Maycon Jorge Deláqua; Lins, Kiana Coimbra Buin; Cardoso, Natanael M; de Oliveira, Claudia Mendes; . <strong>Tabular foundation models for the estimation of probabilistic quasar photometric redshifts in S-PLUS</strong>. arXiv preprint arXiv:2608.10280</td>
+<td>Stern, Rafael Bassi; Gong, Ruobin; Kadane, Joseph B; Schervish, Mark J; Seidenfeld, Teddy; . <strong>Posterior Invariance of Multiplicative Contrasts under Margin Constraints in Contingency Tables</strong>. arXiv preprint arXiv:2604.24490</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2026</td>
@@ -402,27 +404,27 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="even">
 <td class="pub-year">2026</td>
-<td>Comito, Mateus Borges; Izbicki, Rafael; Junior, Paulo do Canto Hubert; Moura, Filipe; . <strong>Improving decision-making in construction: Nonparametric modeling of weather-induced impacts</strong>. Communications in Statistics: Case Studies, Data Analysis and Applications</td>
+<td>Carzon, James; Ghosh, Aishik; Izbicki, Rafael; Lee, Ann B; Masserano, Luca; Whiteson, Daniel; . <strong>On focusing statistical power for searches and measurements in particle physics</strong>. The European Physical Journal C</td>
 </tr>
 <tr class="odd">
-<td class="pub-year">2026</td>
-<td>Izbicki, Rafael; Rodrigues, Pedro LC; . <strong>Benchmarking Tabular Foundation Models for Conditional Density Estimation in Regression</strong>. arXiv preprint arXiv:2603.26611</td>
-</tr>
-<tr class="even">
 <td class="pub-year">2026</td>
 <td>Schervish, Mark J; Seidenfeld, Teddy; Gong, Ruobin; Kadane, Joseph B; Stern, Rafael B; . <strong>Elicitation for sets of probabilities and distributions</strong>. International Journal of Approximate Reasoning</td>
 </tr>
+<tr class="even">
+<td class="pub-year">2026</td>
+<td>Valença, Raquel R; Nakazono, Lilianne; Izbicki, Rafael; Inácio, Marco Henrique de Almeida; da Silva, Maycon Jorge Deláqua; Lins, Kiana Coimbra Buin; Cardoso, Natanael M; de Oliveira, Claudia Mendes; . <strong>Tabular foundation models for the estimation of probabilistic quasar photometric redshifts in S-PLUS</strong>. arXiv preprint arXiv:2608.10280</td>
+</tr>
 <tr class="odd">
 <td class="pub-year">2026</td>
-<td>Stern, Rafael Bassi; Gong, Ruobin; Kadane, Joseph B; Schervish, Mark J; Seidenfeld, Teddy; . <strong>Posterior Invariance of Multiplicative Contrasts under Margin Constraints in Contingency Tables</strong>. arXiv preprint arXiv:2604.24490</td>
+<td>Ramos, Thiago R; Graziadei, Helton; Cabezas, Luben; . <strong>Conformal Prediction via Transported Beta Laws</strong>. arXiv preprint arXiv:2605.19024</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2026</td>
-<td>Santos, Vagner; Coscrato, Victor; Cabezas, Luben; Izbicki, Rafael; Ramos, Thiago; . <strong>LoBoost: Fast Model-Native Local Conformal Prediction for Gradient-Boosted Trees</strong>. arXiv preprint arXiv:2602.22432</td>
+<td>Andrade, Isaac Emanuel Costa de; Rodrigues, Renan Vinicius; Silva, Thiago Nátalys Ribeiro; da Paz, Rosineide Fernando; Zuanetti, Daiane Aparecida; . <strong>Segmentation and classification of clinker crystals in microscopic images by statistical learning methods</strong>. The International Journal of Advanced Manufacturing Technology</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2026</td>
-<td>Carzon, James; Ghosh, Aishik; Izbicki, Rafael; Lee, Ann B; Masserano, Luca; Whiteson, Daniel; . <strong>On focusing statistical power for searches and measurements in particle physics</strong>. The European Physical Journal C</td>
+<td>Comito, Mateus Borges; Izbicki, Rafael; Junior, Paulo do Canto Hubert; Moura, Filipe; . <strong>Improving decision-making in construction: Nonparametric modeling of weather-induced impacts</strong>. Communications in Statistics: Case Studies, Data Analysis and Applications</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2026</td>
@@ -430,7 +432,7 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2026</td>
-<td>Nakazono, L; Valença, R; Perin, G Jacob; Izbicki, R; Hirata, NST; Ivezić, Željko; de Oliveira, C Mendes; . <strong>Massive photometric catalogs for S-PLUS: object classification and quasar photometric redshifts</strong>. Revista Mexicana de Astrofísica y Astronomía Serie de Conferencias</td>
+<td>Santos, Vagner; Coscrato, Victor; Cabezas, Luben; Izbicki, Rafael; Ramos, Thiago; . <strong>LoBoost: Fast Model-Native Local Conformal Prediction for Gradient-Boosted Trees</strong>. arXiv preprint arXiv:2602.22432</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2026</td>
@@ -438,31 +440,55 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2026</td>
+<td>Nakazono, L; Valença, R; Perin, G Jacob; Izbicki, R; Hirata, NST; Ivezić, Ž; de Oliveira, C Mendes; . <strong>Massive photometric catalogs for S-PLUS: object classification and quasar photometric redshifts</strong>. Revista Mexicana de Astrofísica y Astronomía Serie de Conferencias</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2026</td>
+<td>Graziadei, Helton; . <strong>Skew-adaptive conformal prediction</strong>. arXiv preprint arXiv:2605.16145</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2026</td>
+<td>Cerqueira, Andressa; Baptistão, Felipe; . <strong>Normalized Likelihood Criteria for Model Selection in the Stochastic Block Model</strong>. arXiv preprint arXiv:2604.10205</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2026</td>
+<td>Braga, Ribanna AM; Alvarenga, Livia; Aldin, Marlene N; Leite, Jean Michel RS; Pereira, Jaqueline L; Cerqueira, Andressa; Fisberg, Regina M; Rogero, Marcelo M; Sarti, Flavia M; Damasceno, Nágila RT; . <strong>Exploratory genome-wide analysis suggests potential associations of PPP1R12B, FSTL5, G5K3B, and GFRA2 loci with a derived HDL functionality score</strong>. Journal of Clinical Lipidology</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2026</td>
+<td>de Melo, Fraga L; Graziadei, Helton; Targino, Rodrigo; . <strong>Annuity Table Validation in Pension Funds: A Comparative Power Analysis of Goodness-of-Fit Tests</strong>. Helton and Targino, Rodrigo, Annuity Table Validation in Pension Funds: A Comparative Power Analysis of Goodness-of-Fit Tests (April 28, 2026)</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2026</td>
+<td>Graziadei, Helton; Marques F, Paulo C; de Melo, Eduardo FL; Targino, Rodrigo S; . <strong>Conformal prediction for frequency-severity modeling</strong>. Journal of Applied Statistics</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2026</td>
+<td>Marques F, Paulo C; Graziadei, Helton; . <strong>Skew-adaptive conformal prediction</strong>. arXiv e-prints</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2026</td>
+<td>Artes, Rinaldo; Graziadei, Helton; . <strong>Projected random forests and conformal prediction of circular data</strong>. Knowledge-Based Systems</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2026</td>
+<td>Rosante, Rafael Baságlia; Thomaello, Gustavo Laranja; Aguena, Thomaz Yeiden Busnardo; Ramos, Thiago Rodrigo; Zuanetti, Daiane Aparecida; Zanotto, Edgar Dutra; . <strong>Quantifying oxide glass similarity through learned distances: a SHAP-based Earth Mover’s Distance</strong>. Journal of Non-Crystalline Solids</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2026</td>
+<td>Cucuzzella, Elizabeth; Izbicki, Rafael; Lee, Ann B; . <strong>Trustworthy predictive distributions for rare events via diagnostic transport maps</strong>. arXiv preprint arXiv:2603.11229</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2026</td>
 <td>Barreto, Matheus; de Castro, Mário; Ramos, Thiago R; Valle, Denis; Izbicki, Rafael; . <strong>LOCUS: A Distribution-Free Loss-Quantile Score for Risk-Aware Predictions</strong>. arXiv preprint arXiv:2603.01971</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2026</td>
-<td>Kanno, Gustavo de Oliveira; Stern, Rafael Bassi; . <strong>Variáveis instrumentais na inferência causal</strong>.</td>
+<td>Izbicki, Rafael; Rodrigues, Pedro LC; . <strong>Benchmarking Tabular Foundation Models for Conditional Density Estimation in Regression</strong>. arXiv preprint arXiv:2603.26611</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2026</td>
-<td>Cucuzzella, Elizabeth; Izbicki, Rafael; Lee, Ann B; . <strong>Trustworthy predictive distributions for rare events via diagnostic transport maps</strong>. arXiv preprint arXiv:2603.11229</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2025</td>
-<td>Seidenfeld, Teddy; Kadane, Joseph B; Schervish, Mark J; Stern, Rafael B; . <strong>Finite additivity, complete additivity, and the comparative principle</strong>. Erkenntnis</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2025</td>
-<td>Lassance, Rodrigo FL; Stern, Julio M; Stern, Rafael B; . <strong>Nonparametric fbst for validating linear models</strong>. Physical Sciences Forum</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2025</td>
-<td>Dorigo, Tommaso; Aehle, Max; Donini, Julien; Doro, Michele; Gauger, Nicolas R; Izbicki, Rafael; Lee, Ann; Masserano, Luca; Nardi, Federico; SS, Sidharth; . <strong>End-to-end optimization of the layout of a gamma ray observatory</strong>. Nucl. Phys. B</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2025</td>
-<td>Marmolejo-Ramos, Fernando; Perezgonzalez, JD; Ospina, Raydonal; Hernandez-Barajas, Freddy; Castillo, Mauricio; Izbicki, Rafael; Stern, Rafael; Tejada, Julian; . <strong>Beyond p-values: Rethinking Statistical Frameworks for Addressing the Replication Crisis</strong>.</td>
+<td>Kanno, Gustavo de Oliveira; Stern, Rafael Bassi; . <strong>Variáveis instrumentais na inferência causal</strong>.</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2025</td>
@@ -470,23 +496,7 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2025</td>
-<td>Di Giusto, Marina; Fumis, André; Bastos, Murilo; Fossaluza, Victor; Stern, Rafael; Mendes Cardoso, Jéssica; Herrscher, Estelle; Jaouen, Klervia; Wesolowski, Veronica; . <strong>Dietary variability in Middle Holocene South American shellmounds: Insights from isotopic analysis and an adapted Bayesian MixSIAR model</strong>. Plos one</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2025</td>
-<td>Santos, Tiago Mendonça dos; Izbicki, Rafael; Esteves, Luís Gustavo; . <strong>DiNo and RanBu: Lightweight Predictions from Shallow Random Forests</strong>. arXiv preprint arXiv:2510.23624</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2025</td>
-<td>Dey, Biprateep; Zhao, David; Andrews, Brett H; Newman, Jeffrey A; Izbicki, Rafael; Lee, Ann B; . <strong>Towards instance-wise calibration: local amortized diagnostics and reshaping of conditional densities (LADaR)</strong>. Machine Learning: Science and Technology</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2025</td>
-<td>Dorigo, Tommaso; Doro, Michele; Aehle, Max; Awais, Muhammad; Gauger, Nicolas R; Izbicki, Rafael; Kieseler, Jan; Lee, Ann B; Masserano, Luca; Nardi, Federico; . <strong>On the utility function of experiments in fundamental science</strong>. Physics Open</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2025</td>
-<td>Dorigo, Tommaso; Aehle, Max; Arcaro, Cornelia; Awais, Muhammad; Bergamaschi, Fabiola; Donini, Julien; Doro, Michele; Gauger, Nicolas R; Izbicki, Rafael; Kieseler, Jan; . <strong>Toward the end-to-end optimization of the SWGO array layout</strong>. Nuclear Physics B</td>
+<td>Corrêa, Fernando; Stern, Rafael Bassi; Stern, Julio Michael; . <strong>Kullback-Leibler Consistency of $ p $-dimensional P\'olya Tree Posteriors and Differential Entropy Estimation</strong>. arXiv preprint arXiv:2504.02950</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2025</td>
@@ -494,31 +504,7 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2025</td>
-<td>Corrêa, Fernando; Stern, Rafael Bassi; Stern, Julio Michael; . <strong>Kullback-Leibler Consistency of p-dimensional Pólya Tree Posteriors and Differential Entropy Estimation</strong>. arXiv preprint arXiv:2504.02950</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2025</td>
-<td>Valle, Denis; Haneda, Leo; Izbicki, Rafael; Kamimura, Renan Akio; de Azevedo, Bruna Pereira; Gomes, Silvio HM; Sanchez, Arthur; Silva, Carlos A; Almeida, Danilo RA; . <strong>Nonparametric quantification of uncertainty in multistep upscaling approaches: A case study on estimating forest biomass in the Brazilian Amazon</strong>. Science of Remote Sensing</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2025</td>
-<td>Xiao, Yang; Soares, Guilherme; Bastos, Leonardo; Izbicki, Rafael; Moraga, Paula; . <strong>Dengue nowcasting in Brazil by combining official surveillance data and Google Trends information</strong>. PLOS Neglected Tropical Diseases</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2025</td>
-<td>Lassance, Rodrigo FL; Izbicki, Rafael; Stern, Rafael B; . <strong>Adding imprecision to hypotheses: A Bayesian framework for testing practical significance in nonparametric settings</strong>. International Journal of Approximate Reasoning</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2025</td>
-<td>Fröhlich, Alek; Ramos, Thiago; Dos Santos, Gustavo Motta Cabello; Buzatto, Isabela Panzeri Carlotti; Izbicki, Rafael; Tiezzi, Daniel Guimaraes; . <strong>Personalizedus: Interpretable breast cancer risk assessment with local coverage uncertainty quantification</strong>. Proceedings of the AAAI Conference on Artificial Intelligence</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2025</td>
-<td>Cabezas, Luben MC; Otto, Mateus P; Izbicki, Rafael; Stern, Rafael B; . <strong>Regression trees for fast and adaptive prediction intervals</strong>. Information Sciences</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2025</td>
-<td>Correa Filho, Fernando Poliano Tarouco; Stern, Rafael Bassi; . <strong>Another note on the censoring problem: a state of the art assessment and a review of methods for case duration analyses</strong>. SSRN Social Science Research Network</td>
+<td>Dorigo, Tommaso; Aehle, Max; Arcaro, Cornelia; Awais, Muhammad; Bergamaschi, Fabiola; Donini, Julien; Doro, Michele; Gauger, Nicolas R; Izbicki, Rafael; Kieseler, Jan; . <strong>Toward the end-to-end optimization of the SWGO array layout</strong>. Nuclear Physics B</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2025</td>
@@ -526,11 +512,43 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2025</td>
-<td>Segeti, Andrei Antonio; Stern, Rafael Bassi; Camargo, Rodrigo Iavarone; . <strong>Relatório de análise estatística sobre o projeto âDesenho institucional da transação tributária federal: análise sobre sua efetividade como solução alternativa de conflitos e os impactos sobre o comportamento dos contribuintesâ</strong>.</td>
+<td>Carzon, James; Masserano, Luca; Ingram, Joshua D; Shen, Alex; Junior, Antonio Carlos Herling Ribeiro; Dorigo, Tommaso; Doro, Michele; Speagle, Joshua S; Izbicki, Rafael; Lee, Ann B; . <strong>Trustworthy scientific inference with generative models</strong>. arXiv preprint arXiv:2508.02602</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2025</td>
+<td>Corrêa, Fernando; Stern, Rafael; . <strong>Another Note on the Censoring Problem: A State of the Art Assessment and a Review of Methods for Case Duration Analyses</strong>. Available at SSRN 5340259</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Dorigo, Tommaso; Doro, Michele; Aehle, Max; Awais, Muhammad; Gauger, Nicolas R; Izbicki, Rafael; Kieseler, Jan; Lee, Ann B; Masserano, Luca; Nardi, Federico; . <strong>On the utility function of experiments in fundamental science</strong>. Physics Open</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Corrêa, F; Stern, JM; Stern, RB; . <strong>Nonparametric Full Bayesian Significance Testing for Bayesian Histograms. Phys</strong>. Sci. Forum</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Siniscarchio, Matheus de Castro; Costa, Murilo Fernandes da; Stern, Rafael Bassi; . <strong>Relatório de análise estatística sobre o projeto “Ocorrência da esporotricose felina no município de São Paulo e a desratização como medida ambiental de controle”</strong>.</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Segeti, Andrei Antonio; Stern, Rafael Bassi; Camargo, Rodrigo Iavarone; . <strong>Relatório de análise estatística sobre o projeto “Desenho institucional da transação tributária federal: análise sobre sua efetividade como solução alternativa de conflitos e os impactos sobre o comportamento dos contribuintes”</strong>.</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
 <td>Corrêa, Fernando; Stern, Julio Michael; Stern, Rafael Bassi; . <strong>Nonparametric Full Bayesian Significance Testing for Bayesian Histograms</strong>. Physical Sciences Forum</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Lassance, Rodrigo FL; Stern, Julio M; Stern, Rafael B; . <strong>Nonparametric fbst for validating linear models</strong>. Physical Sciences Forum</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Lassance, Rodrigo FL; Izbicki, Rafael; Stern, Rafael B; . <strong>Adding imprecision to hypotheses: A Bayesian framework for testing practical significance in nonparametric settings</strong>. International Journal of Approximate Reasoning</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Valle, Denis; Haneda, Leo; Izbicki, Rafael; Kamimura, Renan Akio; de Azevedo, Bruna Pereira; Gomes, Silvio HM; Sanchez, Arthur; Silva, Carlos A; Almeida, Danilo RA; . <strong>Nonparametric quantification of uncertainty in multistep upscaling approaches: A case study on estimating forest biomass in the Brazilian Amazon</strong>. Science of Remote Sensing</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2025</td>
@@ -538,7 +556,79 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="even">
 <td class="pub-year">2025</td>
+<td>Santos, Tiago Mendonça dos; Izbicki, Rafael; Esteves, Luís Gustavo; . <strong>DiNo and RanBu: Lightweight Predictions from Shallow Random Forests</strong>. arXiv preprint arXiv:2510.23624</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Mendonça dos Santos, Tiago; Izbicki, Rafael; Esteves, Luís Gustavo; . <strong>DiNo and RanBu: Lightweight Predictions from Shallow Random Forests</strong>. arXiv e-prints</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Dey, Biprateep; Zhao, David; Andrews, Brett H; Newman, Jeffrey A; Izbicki, Rafael; Lee, Ann B; . <strong>Towards instance-wise calibration: local amortized diagnostics and reshaping of conditional densities (LADaR)</strong>. Machine Learning: Science and Technology</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Marmolejo-Ramos, Fernando; Perezgonzalez, JD; Ospina, Raydonal; Hernandez-Barajas, Freddy; Castillo, Mauricio; Izbicki, Rafael; Stern, Rafael; Tejada, Julian; . <strong>Beyond p-values: Rethinking Statistical Frameworks for Addressing the Replication Crisis</strong>.</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Fröhlich, Alek; Ramos, Thiago; Dos Santos, Gustavo Motta Cabello; Buzatto, Isabela Panzeri Carlotti; Izbicki, Rafael; Tiezzi, Daniel Guimaraes; . <strong>Personalizedus: Interpretable breast cancer risk assessment with local coverage uncertainty quantification</strong>. Proceedings of the AAAI Conference on Artificial Intelligence</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Xiao, Yang; Soares, Guilherme; Bastos, Leonardo; Izbicki, Rafael; Moraga, Paula; . <strong>Dengue nowcasting in Brazil by combining official surveillance data and Google Trends information</strong>. PLOS Neglected Tropical Diseases</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
 <td>Schervish, Mark J; Kadane, Joseph B; Seidenfeld, Teddy; Stern, Rafael Bassi; . <strong>Information lost by conditioning on the random margins in a two-by-two table</strong>. Biometrika</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Bogoni, Mariella A; Zuanetti, Daiane A; . <strong>A Bayesian approach for variable selection in mixture of logistic regressions with Pólya-Gamma data augmentation</strong>. Statistical Modelling</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Thomaello, Gustavo Laranja; Aguena, Thomaz Yeiden Busnardo; Costa, Eric Trevelato; Rosante, Rafael Baságlia; Ramos, Thiago Rodrigo; Zuanetti, Daiane Aparecida; Zanotto, Edgar Dutra; . <strong>From Patents to Dataset: Scraping for Oxide Glass Compositions and Properties</strong>. arXiv preprint arXiv:2511.16366</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Oliveira, Daniela CR; Schumacher, Fernanda L; Oliveira, Marcos S; Zuanetti, Daiane A; Lachos, Victor H; . <strong>Revolutionizing high-dimensional regularization: EMLMLasso algorithm for linear mixed-effects models</strong>. Proceeding series of the Brazilian society of computational and applied mathematics</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Laranja Thomaello, Gustavo; Yeiden Busnardo Aguena, Thomaz; Trevelato Costa, Eric; Baságlia Rosante, Rafael; Ramos, Thiago Rodrigo; Aparecida Zuanetti, Daiane; Dutra Zanotto, Edgar; . <strong>From Patents to Dataset: Scraping for Oxide Glass Compositions and Properties</strong>. arXiv e-prints</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Montcho, Djidenou; Zuanetti, Daiane A; Chekouo, Thierry; Milan, Luis A; . <strong>Efficient Bayesian variable selection with reversible jump MCMC in imaging genetics: an application to schizophrenia</strong>. Journal of Applied Statistics</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Cerqueira, Andressa; Costa, Laila LS; . <strong>Modeling sparsity in count-weighted networks with stochastic block models</strong>. Journal of Complex Networks</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Andrade, Isaac Emanuel Costa de; Padilha, Renê Michel Santana; Paz, Rosineide Fernando da; Zuanetti, Daiane Aparecida; . <strong>Automated high-resolution microscopy for clinker analysis:: A divide-and-conquer deep learning approach with mask R-CNN and PCA for alite measurement</strong>.</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Amaral, Lucas P; Cabezas, Luben; Ramos, Thiago R; Pereira, Gustavo HGA; . <strong>Conformal Prediction for Compositional Data</strong>. arXiv preprint arXiv:2511.18141</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>de Melo, Eduardo Fraga L; Graziadei, Helton; Targino, Rodrigo; . <strong>Actuarial Learning for Pension Fund Mortality Forecasting</strong>. arXiv preprint arXiv:2504.05881</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>De Andrade, Isaac Emanuel Costa; Padilha, Renê Michel Santana; Da Paz, Rosineide Fernando; Zuanetti, Daiane Aparecida; . <strong>Automated high-resolution microscopy for clinker analysis: A divide-and-conquer deep learning approach with mask R-CNN and PCA for alite measurement</strong>. Expert Systems with Applications</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Ferreira, Ricardo F; Pacola, Matheus E; Schiavone, Vitor G; Pena, Rodrigo FO; . <strong>Consistent model selection for estimating functional interactions among stochastic neurons with variable-length memory</strong>. Neurocomputing</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Rocha, Dayane Horta; Sousa, Vanessa Emille Carvalho; Pascoal, Lívia Maia; Montoril, Michelle Helcias; Monteiro, Flávia Paula Magalhães; de Oliveira Lopes, Marcos Venícios; . <strong>Impaired gas exchange in patients with unstable angina</strong>. Escola Anna Nery Revista de Enfermagem</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2025</td>
@@ -546,27 +636,99 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="even">
 <td class="pub-year">2025</td>
-<td>Carzon, James; Masserano, Luca; Ingram, Joshua D; Shen, Alex; Junior, Antonio Carlos Herling Ribeiro; Dorigo, Tommaso; Doro, Michele; Speagle, Joshua S; Izbicki, Rafael; Lee, Ann B; . <strong>Trustworthy scientific inference with generative models</strong>. arXiv preprint arXiv:2508.02602</td>
+<td>Correa Filho, Fernando Poliano Tarouco; Stern, Rafael Bassi; . <strong>Another note on the censoring problem: a state of the art assessment and a review of methods for case duration analyses</strong>. SSRN Social Science Research Network</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2025</td>
-<td>Siniscarchio, Matheus de Castro; Costa, Murilo Fernandes da; Stern, Rafael Bassi; . <strong>Relatório de análise estatística sobre o projeto “Ocorrência da esporotricose felina no município de São Paulo e a desratização como medida ambiental de controle”</strong>.</td>
+<td>Correa Filho, Fernando Poliano Tarouco; Stern, Julio Michael; Stern, Rafael Bassi; . <strong>Nonparametric Full Bayesian Significance Testing for Bayesian histograms</strong>. Physical Sciences Forum</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Di Giusto, Marina; Fumis, André; Bastos, Murilo; Fossaluza, Victor; Stern, Rafael; Mendes Cardoso, Jéssica; Herrscher, Estelle; Jaouen, Klervia; Wesolowski, Veronica; . <strong>Dietary variability in Middle Holocene South American shellmounds: Insights from isotopic analysis and an adapted Bayesian MixSIAR model</strong>. Plos one</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>dos Santos, Tiago Mendonça; Izbicki, Rafael; Esteves, Luís Gustavo; . <strong>DiNo and RanBu: Lightweight Predictions from Shallow Random Forests</strong>. Available at SSRN 5910738</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Cabezas, Luben MC; Otto, Mateus P; Izbicki, Rafael; Stern, Rafael B; . <strong>Regression trees for fast and adaptive prediction intervals</strong>. Information Sciences</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Seidenfeld, Teddy; Kadane, Joseph B; Schervish, Mark J; Stern, Rafael B; . <strong>Finite additivity, complete additivity, and the comparative principle</strong>. Erkenntnis</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Dorigo, Tommaso; Aehle, Max; Donini, Julien; Doro, Michele; Gauger, Nicolas R; Izbicki, Rafael; Lee, Ann; Masserano, Luca; Nardi, Federico; SS, Sidharth; . <strong>End-to-end optimization of the layout of a gamma ray observatory</strong>. Nucl. Phys. B</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Gannon, Mark Andrew; Esteves, Luís Gustavo; de Bragança Pereira, Carlos Alberto; . <strong>Mixed-Paradigm Hypothesis Tests</strong>. International Encyclopedia of Statistical Science</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Pirola, Joao Pedro; DeForest, Paige; Protachevicz, Paulo R; Fontenas, Laura; Ferreira, Ricardo F; Pena, Rodrigo FO; . <strong>Astrocytic signatures in neuronal activity: a machine learning-based identification approach</strong>. Cognitive Neurodynamics</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Godoi, Mateus Beraldo de; Lima, Olian Castanha; Esteves, Luís Gustavo; Fossaluza, Victor; . <strong>Relatório de análise estatística sobre o projeto “Efeitos do propofol e isoflurano no funcionamento coclear de suínos domésticos”</strong>.</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Cavaliere, Yasmin F; Esteves, Luís G; Fossaluza, Victor; . <strong>An axiomatic development of Pereira-Stern e-value as a measure of support for statistical hypotheses</strong>. International Journal of Approximate Reasoning</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Ribeiro, Liliana Escada; Nogueira, Cármen; Antunes, Margarida; Marques, Andréa; Ferreira, Ricardo; . <strong>Peer support interaction in people with chronic diseases: nurses’ perspectives and practices</strong>. Millenium</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2025</td>
+<td>Rossi, Carlo Vincenzo Felix; Sillas, Rafael Kronwald; Esteves, Luís Gustavo; . <strong>Relatório de análise estatística sobre o projeto “APO comparativa, antes e após intervenção construtiva, como ferramenta qualificadora do projeto”</strong>.</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2025</td>
+<td>Oliveira, Deborah; Cerqueira, Andressa; Oliveira, Roberto; . <strong>Counting communities in weighted Stochastic Block Models via semidefinite programming</strong>. arXiv preprint arXiv:2502.15891</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2024</td>
-<td>Grivol, Gustavo; Izbicki, Rafael; Okuno, Alex A; Stern, Rafael B; . <strong>Flexible conditional density estimation for time series</strong>. Brazilian Journal of Probability and Statistics</td>
+<td>Shimizu, Gilson Y; Izbicki, Rafael; Valle, Denis; . <strong>A new LDA formulation with covariates</strong>. Communications in Statistics-Simulation and Computation</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2024</td>
-<td>Masserano, Luca; Shen, Alex; Doro, Michele; Dorigo, Tommaso; Izbicki, Rafael; Lee, Ann B; . <strong>Classification under nuisance parameters and generalized label shift in likelihood-free inference</strong>. arXiv preprint arXiv:2402.05330</td>
+<td>Pereira, Jaqueline L; de Souza, Camila A; Neyra, Jennyfer EM; Leite, Jean MRS; Cerqueira, Andressa; Mingroni-Netto, Regina C; Soler, Julia MP; Rogero, Marcelo M; Sarti, Flavia M; Fisberg, Regina M; . <strong>Genetic ancestry and self-reported “Skin Color/Race” in the urban admixed population of São Paulo City, Brazil</strong>. Genes</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2024</td>
-<td>Dalmasso, Niccolò; Masserano, Luca; Zhao, David; Izbicki, Rafael; Lee, Ann B; . <strong>Likelihood-free frequentist inference: bridging classical statistics and machine learning for reliable simulator-based inference</strong>. Electronic Journal of Statistics</td>
+<td>Flórez Rivera, Andrés Felipe; Esteves, Luis Gustavo; Fossaluza, Victor; de Bragança Pereira, Carlos Alberto; . <strong>On the nuisance parameter elimination principle in hypothesis testing</strong>. Entropy</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2024</td>
-<td>Assunção, Gabriel O; Izbicki, Rafael; Prates, Marcos O; . <strong>Is augmentation effective in improving prediction in imbalanced datasets?</strong>. Journal of Data Science</td>
+<td>Coscrato, Victor; Bridge, Derek; . <strong>Supplier Recommendation in Online Procurement</strong>. arXiv preprint arXiv:2403.01301</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Amorim, Marcus Ruy de; Esteves, Luís Gustavo; . <strong>Relatório de análise estatística sobre o projeto:“Bem-estar e projetos de vida de jovens do ensino médio no contexto da pandemia de covid-19: um estudo exploratório dos modelos organizadores do pensamento”</strong>.</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Freitas, Ana Caroline Oliveira de; Esteves, Luís Gustavo; . <strong>Relatório de análise estatística sobre o projeto" Estudo de correlação clínica, patológica e radiológica de neoplasias diagnosticadas em autopsias realizadas pelo Departamento de Patologia da Universidade de São Paulo, no período de 2007 a 2023"</strong>.</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Coscrato, Victor; . <strong>Uncertainty in Recommender Systems</strong>.</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Ribeiro, Adele H; Crnkovic, Milena; Pereira, Jaqueline Lopes; Fisberg, Regina Mara; Sarti, Flavia Mori; Rogero, Marcelo Macedo; Heider, Dominik; Cerqueira, Andressa; . <strong>AnchorFCI: harnessing genetic anchors for enhanced causal discovery of cardiometabolic disease pathways</strong>. Frontiers in Genetics</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Cruz Cabezas, Luben; Otto, Mateus Piovezan; Izbicki, Rafael; Stern, Rafael; . <strong>Regression Trees for Fast and Adaptive Prediction Intervals</strong>. Mateus Piovezan and Izbicki, Rafael and Stern, Rafael, Regression Trees for Fast and Adaptive Prediction Intervals</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Cabezas, Luben; Soares, Guilherme P; Ramos, Thiago R; Stern, Rafael B; Izbicki, Rafael; . <strong>Conformal calibration of statistical confidence sets</strong>. arXiv preprint arXiv:2411.19368</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2024</td>
@@ -574,43 +736,43 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2024</td>
-<td>Silva, João Flávio Andrade; Izbicki, Rafael; Bastos, Leonardo S; Soares, Guilherme P; . <strong>Monitoring viral infections in severe acute respiratory syndrome patients in Brazil</strong>. International Workshop on Statistical Modelling</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2024</td>
-<td>Oliveira, Roberto I; Orenstein, Paulo; Ramos, Thiago; Romano, Joao Vitor; . <strong>Split conformal prediction and non-exchangeable data</strong>. Journal of Machine Learning Research</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2024</td>
-<td>Lassance, Rodrigo FL; Izbicki, Rafael; Stern, Rafael B; . <strong>PROTEST: Nonparametric Testing of Hypotheses Enhanced by Experts' Utility Judgements</strong>. arXiv preprint arXiv:2403.05655</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2024</td>
-<td>Dheur, Victor; Bosser, Tanguy; Izbicki, Rafael; Ben Taieb, Souhaib; . <strong>Distribution-free conformal joint prediction regions for neural marked temporal point processes</strong>. Machine Learning</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2024</td>
-<td>Shimizu, Gilson Y; Izbicki, Rafael; Valle, Denis; . <strong>A new LDA formulation with covariates</strong>. Communications in Statistics-Simulation and Computation</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2024</td>
-<td>Valle, Denis; Leite, Rodrigo; Izbicki, Rafael; Silva, Carlos; Haneda, Leo; . <strong>Local uncertainty maps for land-use/land-cover classification without remote sensing and modeling work using a class-conditional conformal approach</strong>. International Journal of Applied Earth Observation and Geoinformation</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2024</td>
 <td>Ramos, Thiago; Schuller, Rodrigo Loro; Okuno, Alex Akira; Nissenbaum, Lucas; Oliveira, Roberto I; Orenstein, Paulo; . <strong>BlockBoost: Scalable and Efficient Blocking through Boosting</strong>. International Conference on Artificial Intelligence and Statistics</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2024</td>
-<td>Nakazono, L; R Valença, R; Soares, G; Izbicki, Rafael; Ivezić, Željko; R Lima, EV; T Hirata, NS; Sodré Jr, L; Overzier, Roderik; Almeida-Fernandes, F; . <strong>The Quasar Catalogue for S-PLUS DR4 (QuCatS) and the estimation of photometric redshifts</strong>. Monthly Notices of the Royal Astronomical Society</td>
+<td>Silva, João Flávio Andrade; Izbicki, Rafael; Bastos, Leonardo S; Soares, Guilherme P; . <strong>Monitoring viral infections in severe acute respiratory syndrome patients in Brazil</strong>. International Workshop on Statistical Modelling</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2024</td>
-<td>Stern, Rafael Bassi; . <strong>Diagnóstico sobre a devolução de crianças e adolescentes em estágio de convivência e adotadas</strong>.</td>
+<td>Valle, Denis; Leite, Rodrigo; Izbicki, Rafael; Silva, Carlos; Haneda, Leo; . <strong>Local uncertainty maps for land-use/land-cover classification without remote sensing and modeling work using a class-conditional conformal approach</strong>. International Journal of Applied Earth Observation and Geoinformation</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2024</td>
-<td>Cunha, Robson Ortz Oliveira; Stern, Rafael Bassi; . <strong>Modelo Hierárquico Bayesiano Não Paramétrico Aplicado em Modelagem de Tópicos</strong>.</td>
+<td>Cabezas, Luben; Soares, Guilherme P; Ramos, Thiago R; Stern, Rafael B; Izbicki, Rafael; . <strong>Distribution-free calibration of statistical confidence sets</strong>. arXiv preprint arXiv:2411.19368</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Oliveira, Roberto I; Orenstein, Paulo; Ramos, Thiago; Romano, Joao Vitor; . <strong>Split conformal prediction and non-exchangeable data</strong>. Journal of Machine Learning Research</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Assunção, Gabriel O; Izbicki, Rafael; Prates, Marcos O; . <strong>Is augmentation effective in improving prediction in imbalanced datasets?</strong>. Journal of Data Science</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Damasceno, Nagila; Aldin, Marlene; Leite, Jean; Pereira, Jaqueline; Cerqueira, Andressa; Fisberg, Regina; Rogero, Marcelo; Sarti, Flavia; . <strong>A genome-wide association study explains atherogenic risk of Brazilian individuals associated with HDL functionality: Health survey of Sao Paulo</strong>. Atherosclerosis</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Cabezas, Luben; Otto, Mateus P; Izbicki, Rafael; Stern, Rafael B; . <strong>Regression trees for fast and adaptive prediction intervals</strong>. arXiv preprint arXiv:2402.07357</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Lassance, Rodrigo FL; Izbicki, Rafael; Stern, Rafael B; . <strong>Adding imprecision to hypotheses: A Bayesian framework for testing practical significance in nonparametric settings</strong>. INTERNATIONAL JOURNAL OF APPROXIMATE REASONING</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Stern, Rafael Bassi; . <strong>Diagnóstico sobre a devolução de crianças e adolescentes em estágio de convivência e adotadas</strong>.</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2024</td>
@@ -618,19 +780,59 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="even">
 <td class="pub-year">2024</td>
-<td>Cabezas, Luben; Soares, Guilherme P; Ramos, Thiago R; Stern, Rafael B; Izbicki, Rafael; . <strong>Distribution-free calibration of statistical confidence sets</strong>. arXiv preprint arXiv:2411.19368</td>
+<td>Cunha, Robson Ortz Oliveira; Stern, Rafael Bassi; . <strong>Modelo Hierárquico Bayesiano Não Paramétrico Aplicado em Modelagem de Tópicos</strong>.</td>
 </tr>
 <tr class="odd">
-<td class="pub-year">2023</td>
-<td>Polo, Felipe Maia; Izbicki, Rafael; Lacerda Jr, Evanildo Gomes; Ibieta-Jimenez, Juan Pablo; Vicente, Renato; . <strong>A unified framework for dataset shift diagnostics</strong>. Information Sciences</td>
+<td class="pub-year">2024</td>
+<td>Silval, João Flávio Andrade; Izbicki, Rafael; Bastos, Leonardo S; . <strong>Acute Respiratory Syndrome Patients</strong>. Developments in Statistical Modelling</td>
 </tr>
 <tr class="even">
-<td class="pub-year">2023</td>
-<td>Coscrato, Victor; Inacio, Marco HA; Botari, Tiago; Izbicki, Rafael; . <strong>NLS: An accurate and yet easy-to-interpret prediction method</strong>. Neural Networks</td>
+<td class="pub-year">2024</td>
+<td>Paz, Rosineide Fernando da; Zuanetti, Daiane Aparecida; Rodrigues, Renan Vinicius; Mesquita, Esequiel; . <strong>Mixed Model and Gaussian Process to Investigate the External Influence on the Propagation Time of Ultrasonic Waves on Masonry Walls</strong>. Journal of Data Science</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Hassan, Waqar; Cabral, Marvin Mendes; Ramos, Thiago Rodrigo; Filho, Antonio Castelo; Nonato, Luis Gustavo; . <strong>Modeling and predicting crimes in the city of São Paulo using graph neural networks</strong>. Brazilian Conference on Intelligent Systems</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Cerqueira, Andressa; Costa, Laila LS; . <strong>Modeling sparsity in count-weighted networks</strong>. arXiv preprint arXiv:2411.03100</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Izzi, João VR; Ferreira, Ricardo F; Girardi, Victor A; Pena, Rodrigo FO; . <strong>Identifying effective connectivity between stochastic neurons with variable-length memory using a transfer entropy rate estimator</strong>. Brain Sciences</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Ribeiro, Leonardo; Zuanetti, Drª Daiane Aparecida; Vieira, Afraˆnio Marcio Correˆa; Ferreira, Ricardo Felipe; . <strong>Comparação de penetrômetros e identificação de fatores na resistência mecânica do solo à penetração via modelos mistos</strong>. Leonardo</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Nakazono, L; R Valença, R; Soares, G; Izbicki, Rafael; Ivezić, Željko; R Lima, EV; T Hirata, NS; Sodré Jr, L; Overzier, Roderik; Almeida-Fernandes, F; . <strong>The Quasar Catalogue for S-PLUS DR4 (QuCatS) and the estimation of photometric redshifts</strong>. Monthly Notices of the Royal Astronomical Society</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Dheur, Victor; Bosser, Tanguy; Izbicki, Rafael; Ben Taieb, Souhaib; . <strong>Distribution-free conformal joint prediction regions for neural marked temporal point processes</strong>. Machine Learning</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Lassance, Rodrigo FL; Izbicki, Rafael; Stern, Rafael B; . <strong>PROTEST: Nonparametric Testing of Hypotheses Enhanced by Experts' Utility Judgements</strong>. arXiv preprint arXiv:2403.05655</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Masserano, Luca; Shen, Alex; Doro, Michele; Dorigo, Tommaso; Izbicki, Rafael; Lee, Ann B; . <strong>Classification under nuisance parameters and generalized label shift in likelihood-free inference</strong>. arXiv preprint arXiv:2402.05330</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2024</td>
+<td>Dalmasso, Niccolò; Masserano, Luca; Zhao, David; Izbicki, Rafael; Lee, Ann B; . <strong>Likelihood-free frequentist inference: bridging classical statistics and machine learning for reliable simulator-based inference</strong>. Electronic Journal of Statistics</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2024</td>
+<td>Grivol, Gustavo; Izbicki, Rafael; Okuno, Alex A; Stern, Rafael B; . <strong>Flexible conditional density estimation for time series</strong>. Brazilian Journal of Probability and Statistics</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2023</td>
-<td>Cerqueira, Andressa; Levina, Elizaveta; . <strong>A pseudo-likelihood approach to community detection in weighted networks</strong>. arXiv preprint arXiv:2303.05909</td>
+<td>Coscrato, Victor; Inacio, Marco HA; Botari, Tiago; Izbicki, Rafael; . <strong>NLS: An accurate and yet easy-to-interpret prediction method</strong>. Neural Networks</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2023</td>
@@ -638,31 +840,47 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2023</td>
-<td>Izbicki, Rafael; Cabezas, Luben; Colugnatti, Fernando AB; Lassance, Rodrigo FL; de Souza, Altay AL; Stern, Rafael B; . <strong>REACT to NHST: Sensible conclusions to meaningful hypotheses</strong>. arXiv preprint arXiv:2308.09112</td>
+<td>Cerqueira, Andressa; Gallo, Sandro; Leonardi, Florencia; Vera, Cristel; . <strong>Consistent model selection for the degree corrected stochastic blockmodel</strong>. arXiv preprint arXiv:2302.03734</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2023</td>
-<td>Nakazono, Lilianne; Ruiz, Raquel; Soares, Gabriela; Izbicki, Rafael; Ivezic, Zeljko; Mendes de Oliveira, Claudia; . <strong>Redshift estimation of quasars using 12-band photometry from S-PLUS</strong>. American Astronomical Society Meeting Abstracts</td>
+<td>Vitor, Ayrton Amaral Alves; Pereira, Carlos Alberto de Bragança; Esteves, Luís Gustavo; Bonetto, Manuela Costa Pires; . <strong>Relatório de análise estatística sobre o projeto" Avaliação pós ocupação como ferramenta avaliativa de projetos integrados de reforma"</strong>.</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2023</td>
-<td>Dey, Biprateep; Zhao, David; Newman, Jeffrey; Andrews, Brett; Lee, Ann; Izbicki, Rafael; . <strong>Calibrated Predictive Distributions</strong>. APS April Meeting Abstracts</td>
+<td>Montcho, Djidenou; Zuanetti, Daiane; Chekouo, Thierry; Milan, Luis; . <strong>Bayesian variable selection using an informed reversible jump in imaging genetics: an application to schizophrenia</strong>. arXiv preprint arXiv:2307.01134</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2023</td>
-<td>Assunção, Gabriel O; Izbicki, Rafael; Prates, Marcos O; . <strong>Is augmentation effective to improve prediction in imbalanced text datasets?</strong>. arXiv preprint arXiv:2304.10283</td>
+<td>Mueller, Natalie; Anderle, Rodrigo; Brachowicz, Nicolai; Graziadei, Helton; Lloyd, Simon J; de Sampaio Morais, Gabriel; Sironi, Alberto Pietro; Gibert, Karina; Tonne, Cathryn; Nieuwenhuijsen, Mark; . <strong>Model choice for quantitative health impact assessment and modelling: an expert consultation and narrative literature review</strong>. International journal of health policy and Management</td>
 </tr>
 <tr class="odd">
-<td class="pub-year">2023</td>
-<td>Esteves, Luís G; Izbicki, Rafael; Stern, Julio M; Stern, Rafael B; . <strong>Logical coherence in Bayesian simultaneous three-way hypothesis tests</strong>. International Journal of Approximate Reasoning</td>
-</tr>
-<tr class="even">
 <td class="pub-year">2023</td>
 <td>Cabezas, Luben Miguel Cruz; Otto, Mateus Piovezan; Izbicki, Rafael; Stern, Rafael Bassi; . <strong>Toward local and valid uncertainty estimation in machine learning</strong>. Livro de Resumos</td>
 </tr>
+<tr class="even">
+<td class="pub-year">2023</td>
+<td>Cabezas, Luben MC; Izbicki, Rafael; Stern, Rafael B; . <strong>Hierarchical clustering: Visualization, feature importance and model selection</strong>. Applied Soft Computing</td>
+</tr>
 <tr class="odd">
 <td class="pub-year">2023</td>
+<td>Polo, Felipe Maia; Izbicki, Rafael; Lacerda Jr, Evanildo Gomes; Ibieta-Jimenez, Juan Pablo; Vicente, Renato; . <strong>A unified framework for dataset shift diagnostics</strong>. Information Sciences</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2023</td>
+<td>Esteves, Luís G; Izbicki, Rafael; Stern, Julio M; Stern, Rafael B; . <strong>Logical coherence in Bayesian simultaneous three-way hypothesis tests</strong>. International Journal of Approximate Reasoning</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2023</td>
+<td>Dalmasso, Niccolò; Masserano, Luca; Zhao, David; Izbicki, Rafael; Lee, Ann B; . <strong>Likelihood-free frequentist inference: Confidence sets with correct conditional coverage</strong>. arXiv preprint arXiv:2107.03920</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2023</td>
 <td>McNeely, Trey; Vincent, Galen; Wood, Kimberly M; Izbicki, Rafael; Lee, Ann B; . <strong>Detecting distributional differences in labeled sequence data with application to tropical cyclone satellite imagery</strong>. The Annals of Applied Statistics</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2023</td>
+<td>Motta, Flávia Castro; Montoril, Michel Helcias; . <strong>Identifying regime switches through Bayesian wavelet estimation: evidence from flood detection in the Taquari River Valley</strong>. arXiv preprint arXiv:2307.14828</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2023</td>
@@ -670,11 +888,27 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2023</td>
-<td>Cabezas, Luben MC; Izbicki, Rafael; Stern, Rafael B; . <strong>Hierarchical clustering: Visualization, feature importance and model selection</strong>. Applied Soft Computing</td>
+<td>dos Santos, Milene Regina; Izbicki, Rafael; . <strong>Expertise-based weighting for regression models with noisy labels</strong>. arXiv e-prints</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2023</td>
-<td>Motta, Flávia Castro; Montoril, Michel Helcias; . <strong>Identifying regime switches through Bayesian wavelet estimation: evidence from flood detection in the Taquari River Valley</strong>. arXiv preprint arXiv:2307.14828</td>
+<td>Assunção, Gabriel O; Izbicki, Rafael; Prates, Marcos O; . <strong>Is augmentation effective to improve prediction in imbalanced text datasets?</strong>. arXiv preprint arXiv:2304.10283</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2023</td>
+<td>Nakazono, Lilianne; Ruiz, Raquel; Soares, Gabriela; Izbicki, Rafael; Ivezic, Zeljko; Mendes de Oliveira, Claudia; . <strong>Redshift estimation of quasars using 12-band photometry from S-PLUS</strong>. American Astronomical Society Meeting Abstracts</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2023</td>
+<td>Dey, Biprateep; Zhao, David; Newman, Jeffrey; Andrews, Brett; Lee, Ann; Izbicki, Rafael; . <strong>Calibrated Predictive Distributions</strong>. APS April Meeting Abstracts</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2023</td>
+<td>Izbicki, Rafael; Cabezas, Luben; Colugnatti, Fernando AB; Lassance, Rodrigo FL; de Souza, Altay AL; Stern, Rafael B; . <strong>REACT to NHST: Sensible conclusions to meaningful hypotheses</strong>. arXiv preprint arXiv:2308.09112</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2023</td>
+<td>Csillag, Daniel; Paes, Lucas Monteiro; Ramos, Thiago; Romano, João Vitor; Schuller, Rodrigo; Seixas, Roberto B; Oliveira, Roberto I; Orenstein, Paulo; . <strong>AmnioML: amniotic fluid segmentation and volume prediction with uncertainty quantification</strong>. Proceedings of the AAAI Conference on Artificial Intelligence</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2023</td>
@@ -682,11 +916,35 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="even">
 <td class="pub-year">2023</td>
-<td>Silva, Alexandre Felix da; Maciel, Emanuel Hark; Aragão, Emerson da Silva; Stern, Rafael Bassi; Fossaluza, Victor; . <strong>Relatório de análise estatística sobre o projeto" Risco de perda em ações judiciais"</strong>.</td>
+<td>Cerqueira, Andressa; Levina, Elizaveta; . <strong>A pseudo-likelihood approach to community detection in weighted networks</strong>. arXiv preprint arXiv:2303.05909</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2023</td>
-<td>Csillag, Daniel; Paes, Lucas Monteiro; Ramos, Thiago; Romano, João Vitor; Schuller, Rodrigo; Seixas, Roberto B; Oliveira, Roberto I; Orenstein, Paulo; . <strong>AmnioML: amniotic fluid segmentation and volume prediction with uncertainty quantification</strong>. Proceedings of the AAAI Conference on Artificial Intelligence</td>
+<td>Silva, Alexandre Felix da; Maciel, Emanuel Hark; Aragão, Emerson da Silva; Stern, Rafael Bassi; Fossaluza, Victor; . <strong>Relatório de análise estatística sobre o projeto" Risco de perda em ações judiciais"</strong>.</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2023</td>
+<td>Alencar, Bianca Siqueira; Gouveia, Estevão Monteiro Días; Esteves, Luís Gustavo; Coelho, Mateus Schimidt; . <strong>Relatório de análise estatística sobre o projeto" Explorando a influência da extroversão-introversão e o grau de stress de consumidores na percepção de campanhas publicitárias"</strong>.</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2023</td>
+<td>Coscrato, V; Bridge, D; Li, X; Xiao, G; Chen, Y; Tang, Z; Jiang, W; Li, K; Zhou, X; Sun, A; . <strong>Recommender systems</strong>. ACM Transactions on</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2023</td>
+<td>Coscrato, Victor; Bridge, Derek; . <strong>Estimating and evaluating the uncertainty of rating predictions and top-n recommendations in recommender systems</strong>. ACM Transactions on Recommender Systems</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2023</td>
+<td>Sabillón, Gustavo Alexis; Zuanetti, Daiane Aparecida; . <strong>Analyzing the rainfall pattern in Honduras through non-homogeneous hidden Markov models</strong>. Journal of Data Science</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2023</td>
+<td>Sabillón, Gustavo Alexis; Cotrim, Luiz Gabriel Fernandes; Zuanetti, Daiane Aparecida; . <strong>A data-driven reversible jump for estimating a finite mixture of regression models: GA Sabillón et al.</strong>. TEST</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2023</td>
+<td>Cerqueira, Andressa; Leonardi, Florencia; . <strong>Optimal recovery by maximum and integrated conditional likelihood in the general Stochastic Block Model</strong>. arXiv preprint arXiv:2311.10153</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2023</td>
@@ -694,23 +952,47 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2022</td>
+<td>Shimizu, Gilson Y; Izbicki, Rafael; de Carvalho, Andre CPLF; . <strong>Model interpretation using improved local regression with variable importance</strong>. arXiv preprint arXiv:2209.05371</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2022</td>
+<td>Gong, Ruobin; Kadane, Joseph B; Schervish, Mark J; Seidenfeld, Teddy; Stern, Rafael Bassi; . <strong>The Value Provided by a Scientific Explanation</strong>. Reflections on the Foundations of Probability and Statistics: Essays in Honor of Teddy Seidenfeld</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2022</td>
+<td>Masserano, Luca; Dorigo, Tommaso; Izbicki, Rafael; Kuusela, Mikael; Lee, Ann B; . <strong>Simulation-based inference with Waldo: Perfectly calibrated confidence regions using any prediction or posterior estimation algorithm</strong>. arXiv preprint arXiv:2205.15680</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2022</td>
+<td>Dey, Biprateep; Zhao, David; Andrews, Brett; Newman, Jeffrey; Izbicki, Rafael; Lee, Ann; . <strong>Calibrated predictive distributions for photometric redshifts</strong>. Machine Learning for Astrophysics, proceedings of the Thirty-ninth International Conference on Machine Learning (ICML 2022)</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2022</td>
+<td>Izbicki, Rafael; Shimizu, Gilson; Stern, Rafael B; . <strong>Cd-split and hpd-split: Efficient conformal regions in high dimensions</strong>. Journal of Machine Learning Research</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2022</td>
 <td>Teeselink, Bouke Klein; van Dolder, Dennie; van den Assem, Martijn J; Dana, Jason; . <strong>High-Stakes Failures of Backward Induction: Evidence from" The Price Is Right"</strong>.</td>
 </tr>
-<tr class="even">
-<td class="pub-year">2022</td>
-<td>Gong, Ruobin; Kadane, Joseph B; Schervish, Mark J; Seidenfeld, Teddy; Stern, Rafael B; . <strong>Learning and total evidence with imprecise probabilities</strong>. International Journal of Approximate Reasoning</td>
-</tr>
 <tr class="odd">
 <td class="pub-year">2022</td>
-<td>Feronato, Sofia Galvão; Silva, Maria Luiza Matos; Izbicki, Rafael; Farias, Ticiana DJ; Shigunov, Patricia; Dallagiovanna, Bruno; Passetti, Fabio; Dos Santos, Hellen Geremias; . <strong>Selecting genetic variants and interactions associated with amyotrophic lateral sclerosis: a group LASSO approach</strong>. Journal of Personalized Medicine</td>
+<td>Inacio, M; Izbicki, R; Lopes, D; Diniz, MA; Salasar, LE; Ferreira, JCP; . <strong>What if the forecaster knew? Assessing forecast reliability via simulation</strong>. Trends in Computational and Applied Mathematics</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2022</td>
-<td>Fumis, André Americano de Freitas; Stern, Rafael Bassi; Fossaluza, Victor; Lima, Vitor Hugo Vieira de; . <strong>Relatório de Análise Estatística sobre o Projeto Uma bioarqueologia da infância: Apontamentos sobre a dieta infantil entre sambaquieiros através da análise de isótopos estáveis de δ15N e Î´13Câ</strong>.</td>
+<td>Oliveira, Roberto I; Orenstein, Paulo; Ramos, Thiago; Romano, João Vitor; . <strong>Split conformal prediction for dependent data</strong>. arXiv preprint arXiv:2203.15885</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2022</td>
-<td>da Silva Ferreira, Clécio; Montoril, Michel H; Paula, Gilberto A; . <strong>Partially linear models with p-order autoregressive skew-normal errors</strong>. Brazilian Journal of Probability and Statistics</td>
+<td>Csillag, Daniel; Piazza, Carolina; Ramos, Thiago; Romano, João Vitor; Oliveira, Roberto I; Orenstein, Paulo; . <strong>ExactBoost: Directly Boosting the Margin in Combinatorial and Non-decomposable Metrics</strong>. International Conference on Artificial Intelligence and Statistics</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2022</td>
+<td>Esteves, Luís Gustavo; Pedroni, Marcos Caires; Fernandes, Maria Teresa Bechere; . <strong>Relatório de análise estatística sobre o projeto “Avaliação do estado nutricional de crianças de 2 a 12 anos de idade que frequentam o ambulatório de pediatria do Centro de Saúde Escolar Samuel B. Pessoa”</strong>.</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2022</td>
+<td>Hoyos, Alejandra E Patiño; Fossaluza, Victor; Esteves, Luís Gustavo; de Bragança Pereira, Carlos Alberto; . <strong>Adaptive significance levels in tests for linear regression models: The e-value and p-value cases</strong>. Entropy</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2022</td>
@@ -718,27 +1000,35 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2022</td>
+<td>Feronato, Sofia Galvão; Silva, Maria Luiza Matos; Izbicki, Rafael; Farias, Ticiana DJ; Shigunov, Patricia; Dallagiovanna, Bruno; Passetti, Fabio; Dos Santos, Hellen Geremias; . <strong>Selecting genetic variants and interactions associated with amyotrophic lateral sclerosis: a group LASSO approach</strong>. Journal of Personalized Medicine</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2022</td>
+<td>da Silva Ferreira, Clécio; Montoril, Michel H; Paula, Gilberto A; . <strong>Partially linear models with p-order autoregressive skew-normal errors</strong>. Brazilian Journal of Probability and Statistics</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2022</td>
+<td>Gong, Ruobin; Kadane, Joseph B; Schervish, Mark J; Seidenfeld, Teddy; Stern, Rafael B; . <strong>Learning and total evidence with imprecise probabilities</strong>. International Journal of Approximate Reasoning</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2022</td>
+<td>Viana, Yasmin; Amorim, Thiago Orion Simões; de Castro, Franciele Rezende; Wedekin, Leonardo; Paro, Alexandre Douglas; Montoril, Michel Helcias; Rossi-Santos, Marcos; Andriolo, Artur; . <strong>Are dolphins modulating whistles in interspecific group contexts?</strong>. Bioacoustics</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2022</td>
+<td>Masserano, Luca; Dorigo, Tommaso; Izbicki, Rafael; Kuusela, Mikael; Lee, Ann B; . <strong>Simulator-based inference with waldo: Confidence regions by leveraging prediction algorithms and posterior estimators for inverse problems</strong>. arXiv preprint arXiv:2205.15680</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2022</td>
+<td>Fumis, André Americano de Freitas; Stern, Rafael Bassi; Fossaluza, Victor; Lima, Vitor Hugo Vieira de; . <strong>Relatório de Análise Estatística sobre o Projeto Uma bioarqueologia da infância: Apontamentos sobre a dieta infantil entre sambaquieiros através da análise de isótopos estáveis de δ15N e δ13C”</strong>.</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2022</td>
 <td>Stern, Julio Michael; Pereira, Carlos Alberto de Braganca; Lauretto, Marcelo de Souza; Esteves, Luis Gustavo; Izbicki, Rafael; Stern, Rafael Bassi; Diniz, Marcio Alves; Borges, Wagner de Souza; . <strong>The e-value and the full Bayesian significance test: logical properties and philosophical consequences</strong>. arXiv preprint arXiv:2205.08010</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2022</td>
-<td>Inacio, M; Izbicki, R; Lopes, D; Diniz, MA; Salasar, LE; Ferreira, JCP; . <strong>What if the forecaster knew? Assessing forecast reliability via simulation</strong>. Trends in Computational and Applied Mathematics</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2022</td>
-<td>Gong, Ruobin; Kadane, Joseph B; Schervish, Mark J; Seidenfeld, Teddy; Stern, Rafael Bassi; . <strong>The Value Provided by a Scientific Explanation</strong>. Reflections on the Foundations of Probability and Statistics: Essays in Honor of Teddy Seidenfeld</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2022</td>
-<td>Izbicki, Rafael; Shimizu, Gilson; Stern, Rafael B; . <strong>Cd-split and hpd-split: Efficient conformal regions in high dimensions</strong>. Journal of Machine Learning Research</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2022</td>
-<td>Viana, Yasmin; Amorim, Thiago Orion Simões; de Castro, Franciele Rezende; Wedekin, Leonardo; Paro, Alexandre Douglas; Montoril, Michel Helcias; Rossi-Santos, Marcos; Andriolo, Artur; . <strong>Are dolphins modulating whistles in interspecific group contexts?</strong>. Bioacoustics</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2022</td>
-<td>Masserano, Luca; Dorigo, Tommaso; Izbicki, Rafael; Kuusela, Mikael; Lee, Ann B; . <strong>Simulation-based inference with Waldo: Perfectly calibrated confidence regions using any prediction or posterior estimation algorithm</strong>. arXiv preprint arXiv:2205.15680</td>
+<td>Reimann, Bernardo F; Izbicki, Rafael; Stern, Julio M; Stern, Rafael B; Esteves, Luís G; . <strong>Logical coherence in Bayesian simultaneous three-way hypothesis tests</strong>. arXiv preprint arXiv:2204.01495</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2022</td>
@@ -746,43 +1036,51 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="even">
 <td class="pub-year">2022</td>
-<td>de Oliveira, Fabiana Luci; Stern, Rafael Bassi; Noli, Ana Fernanda; . <strong>Decision-Making Process of Supreme Court in Brazil's Democratic Transition (1978-1988)</strong>. Braz. J. Empirical Legal Stud.</td>
+<td>Otto, Mateus P; Izbicki, Rafael; . <strong>RFFNet: Scalable and interpretable kernel methods via Random Fourier Features</strong>. arXiv preprint arXiv:2211.06410</td>
 </tr>
 <tr class="odd">
+<td class="pub-year">2022</td>
+<td>de Oliveira, Fabiana Luci; Stern, Rafael Bassi; Noli, Ana Fernanda; . <strong>Decision-Making Process of Supreme Court in Brazil's Democratic Transition (1978-1988)</strong>. Braz. J. Empirical Legal Stud.</td>
+</tr>
+<tr class="even">
 <td class="pub-year">2022</td>
 <td>Cerqueira, Andressa; Garcia, Nancy L; . <strong>Graphical construction of spatial Gibbs random graphs</strong>. Journal of Mathematical Physics</td>
 </tr>
-<tr class="even">
-<td class="pub-year">2022</td>
-<td>Shimizu, Gilson Y; Izbicki, Rafael; de Carvalho, Andre CPLF; . <strong>Model interpretation using improved local regression with variable importance</strong>. arXiv preprint arXiv:2209.05371</td>
-</tr>
 <tr class="odd">
 <td class="pub-year">2022</td>
-<td>Dey, Biprateep; Zhao, David; Andrews, Brett; Newman, Jeffrey; Izbicki, Rafael; Lee, Ann; . <strong>Calibrated predictive distributions for photometric redshifts</strong>. Machine Learning for Astrophysics, proceedings of the Thirty-ninth International Conference on Machine Learning (ICML 2022)</td>
+<td>Dey, Biprateep; Zhao, David; Newman, Jeffrey A; Andrews, Brett H; Izbicki, Rafael; Lee, Ann B; . <strong>Conditionally calibrated predictive distributions by probability-probability map: application to galaxy redshift estimation and probabilistic forecasting</strong>. arXiv preprint arXiv:2205.14568</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2022</td>
-<td>Csillag, Daniel; Piazza, Carolina; Ramos, Thiago; Romano, Joao Vitor; Oliveira, Roberto I; Orenstein, Paulo; . <strong>ExactBoost: Directly Boosting the Margin in Combinatorial and Non-decomposable Metrics</strong>. International Conference on Artificial Intelligence and Statistics</td>
+<td>Moreira, João Pedro de Freitas Feliciano; Esteves, Luís Gustavo; . <strong>Relatório de análise estatística sobre o projeto “Associação entre excesso de peso e evolução clínica durante internação em um hospital geral pediátrico”</strong>.</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2022</td>
-<td>Oliveira, Roberto I; Orenstein, Paulo; Ramos, Thiago; Romano, João Vitor; . <strong>Split conformal prediction for dependent data</strong>. arXiv preprint arXiv:2203.15885</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2022</td>
-<td>Martins, Thomas Correa; . <strong>Bayesian inference for term structure models</strong>.</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2022</td>
-<td>Otto, Mateus P; Izbicki, Rafael; . <strong>RFFNet: Large-Scale Interpretable Kernel Methods via Random Fourier Features</strong>. arXiv preprint arXiv:2211.06410</td>
+<td>Coscrato, Victor; Bridge, Derek; . <strong>Recommendation uncertainty in implicit feedback recommender systems</strong>. Irish Conference on Artificial Intelligence and Cognitive Science</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2022</td>
 <td>Soares, Gabriela Pereira; de Curso, Trabalho de Conclusao; Izbicki, Rafael; Sodre, Laerte; Stern, Rafael; . <strong>Uma abordagem estatística sobre a estimação de redshifts de quasares usando dados do S-PLUS</strong>.</td>
 </tr>
 <tr class="odd">
+<td class="pub-year">2022</td>
+<td>Martins, Thomas Correa; . <strong>Bayesian inference for term structure models</strong>.</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2022</td>
+<td>Otto, Mateus P; Izbicki, Rafael; . <strong>RFFNet: Large-Scale Interpretable Kernel Methods via Random Fourier Features</strong>. arXiv preprint arXiv:2211.06410</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2022</td>
+<td>C. Marques F, Paulo; Graziadei, Helton; Lopes, Hedibert F; . <strong>Bayesian generalizations of the integer-valued autoregressive model</strong>. Journal of Applied Statistics</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2022</td>
+<td>Zuanetti, Daiane Aparecida; Milan, Luis Aparecido; . <strong>A new Bayesian approach for QTL mapping of family data</strong>. Journal of Bioinformatics and Computational Biology</td>
+</tr>
+<tr class="odd">
 <td class="pub-year">2021</td>
-<td>Montoril, Michel H; Correia, Leandro T; Migon, Helio S; . <strong>Bayesian estimation of dynamic weights in Gaussian mixture models</strong>. arXiv preprint arXiv:2104.03395</td>
+<td>Montoril, Michel H; Correia, Leandro T; Migon, Helio S; . <strong>Dynamic Weights in Gaussian Mixture Models: A Bayesian Approach</strong>. arXiv preprint arXiv:2104.03395</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2021</td>
@@ -790,31 +1088,15 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2021</td>
-<td>Comito, Mateus Borges; Izbicki, Rafael; . <strong>Estudo de pessoas desaparecidas através de técnicas de aprendizado de máquina</strong>. XXVII CIC e XII CIDTI</td>
+<td>Yasuda, Luri Ikeda; Stern, Rafael Bassi; . <strong>Métodos de simulação para o cálculo de integrais com aplicações à Inferência Bayesiana</strong>. XXVII CIC e XII CIDTI</td>
 </tr>
 <tr class="even">
+<td class="pub-year">2021</td>
+<td>Gong, Ruobin; Kadane, Joseph B; Schervish, Mark J; Seidenfeld, Teddy; Stern, Rafael B; GONG, RUOBIN; KADANE, JOSEPH B; SCHERVISH, MARK J; SEIDENFELD, TEDDY; STERN, RAFAEL B; . <strong>Deceptive Credences</strong>. Ergo an Open Access Journal of Philosophy</td>
+</tr>
+<tr class="odd">
 <td class="pub-year">2021</td>
 <td>Shimizu, Gilson Yuuji; . <strong>Bandas de predição usando densidade condicional estimada e um modelo LDA com covariáveis.</strong>.</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2021</td>
-<td>de Carvalho Ceregatti, Rafael; Izbicki, Rafael; Bueno Salasar, Luis Ernesto; . <strong>WIKS: a general Bayesian nonparametric index for quantifying differences between two populations: R. de Carvalho Ceregatti et al.</strong>. Test</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2021</td>
-<td>Comito, Mateus Borges; Izbicki, Rafael; Stern, Rafael; Trecenti, Julio Adolfo Zucon; . <strong>Causas de desaparecimento no Estado de São Paulo entre 2013 e 2014: uma análise automatizada de boletins de ocorrência</strong>.</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2021</td>
-<td>Inacio, Marco; Izbicki, Rafael; Gyires-Toth, Balint; . <strong>Distance assessment and analysis of high-dimensional samples using variational autoencoders</strong>. Information Sciences</td>
-</tr>
-<tr class="even">
-<td class="pub-year">2021</td>
-<td>Cabezas, Luben Miguel; Stern, Rafael Bassi; . <strong>Previsão em modelos filogenéticos</strong>. XXVII CIC e XII CIDTI</td>
-</tr>
-<tr class="odd">
-<td class="pub-year">2021</td>
-<td>Zhao, David; Dalmasso, Niccolò; Izbicki, Rafael; Lee, Ann B; . <strong>Diagnostics for conditional density models and Bayesian inference algorithms</strong>. Uncertainty in Artificial Intelligence</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2021</td>
@@ -826,19 +1108,35 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="even">
 <td class="pub-year">2021</td>
-<td>Valle, Denis; Shimizu, Gilson; Izbicki, Rafael; Maracahipes, Leandro; Silverio, Divino Vicente; Paolucci, Lucas N; Jameel, Yusuf; Brando, Paulo; . <strong>The Latent Dirichlet Allocation model with covariates (LDAcov): A case study on the effect of fire on species composition in Amazonian forests</strong>. Ecology and evolution</td>
+<td>Comito, Mateus Borges; Izbicki, Rafael; Stern, Rafael; Trecenti, Julio Adolfo Zucon; . <strong>Causas de desaparecimento no Estado de São Paulo entre 2013 e 2014: uma análise automatizada de boletins de ocorrência</strong>.</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2021</td>
-<td>Yasuda, Luri Ikeda; Stern, Rafael Bassi; . <strong>Métodos de simulação para o cálculo de integrais com aplicações Ã Inferência Bayesiana</strong>. XXVII CIC e XII CIDTI</td>
+<td>Zhao, David; Dalmasso, Niccolò; Izbicki, Rafael; Lee, Ann B; . <strong>Diagnostics for conditional density models and Bayesian inference algorithms</strong>. Uncertainty in Artificial Intelligence</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2021</td>
-<td>Gong, Ruobin; Kadane, Joseph B; Schervish, Mark J; Seidenfeld, Teddy; Stern, Rafael B; GONG, RUOBIN; KADANE, JOSEPH B; SCHERVISH, MARK J; SEIDENFELD, TEDDY; STERN, RAFAEL B; . <strong>Deceptive Credences</strong>. Ergo an Open Access Journal of Philosophy</td>
+<td>de Carvalho Ceregatti, Rafael; Izbicki, Rafael; Bueno Salasar, Luis Ernesto; . <strong>WIKS: a general Bayesian nonparametric index for quantifying differences between two populations: R. de Carvalho Ceregatti et al.</strong>. Test</td>
 </tr>
 <tr class="odd">
 <td class="pub-year">2021</td>
-<td>Dey, Biprateep; Newman, Jeffrey A; Andrews, Brett H; Izbicki, Rafael; Lee, Ann B; Zhao, David; Rau, Markus Michael; Malz, Alex I; . <strong>Re-calibrating photometric redshift probability distributions using feature-space regression</strong>. arXiv preprint arXiv:2110.15209</td>
+<td>Inacio, Marco; Izbicki, Rafael; Gyires-Toth, Balint; . <strong>Distance assessment and analysis of high-dimensional samples using variational autoencoders</strong>. Information Sciences</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2021</td>
+<td>Comito, Mateus Borges; Izbicki, Rafael; . <strong>Estudo de pessoas desaparecidas através de técnicas de aprendizado de máquina</strong>. XXVII CIC e XII CIDTI</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2021</td>
+<td>Valle, Denis; Shimizu, Gilson; Izbicki, Rafael; Maracahipes, Leandro; Silverio, Divino Vicente; Paolucci, Lucas N; Jameel, Yusuf; Brando, Paulo; . <strong>The Latent Dirichlet Allocation model with covariates (LDAcov): A case study on the effect of fire on species composition in Amazonian forests</strong>. Ecology and evolution</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2021</td>
+<td>Dalmasso, Niccolo; Zhao, David; Izbicki, Rafael; Lee, Ann B; . <strong>Likelihood-free frequentist inference: Bridging classical statistics and machine learning in simulation and uncertainty quantification</strong>. arXiv preprint arXiv:2107.03920</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2021</td>
+<td>Montoril, Michel H; Correia, Leandro T; Migon, Helio S; . <strong>Bayesian estimation of dynamic weights in Gaussian mixture models</strong>. arXiv preprint arXiv:2104.03395</td>
 </tr>
 <tr class="even">
 <td class="pub-year">2021</td>
@@ -846,7 +1144,39 @@ Predicting properties of glass materials to guide new compositions, incorporatin
 </tr>
 <tr class="odd">
 <td class="pub-year">2021</td>
+<td>Dey, Biprateep; Newman, Jeffrey A; Andrews, Brett H; Izbicki, Rafael; Lee, Ann B; Zhao, David; Rau, Markus Michael; Malz, Alex I; . <strong>Re-calibrating photometric redshift probability distributions using feature-space regression</strong>. arXiv preprint arXiv:2110.15209</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2021</td>
+<td>Cabezas, Luben Miguel; Stern, Rafael Bassi; . <strong>Previsão em modelos filogenéticos</strong>. XXVII CIC e XII CIDTI</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2021</td>
+<td>Kadane, Joseph B; Schervish, Mark J; Stern, Rafael B; Gong, Ruobin; Seidenfeld, Teddy; . <strong>Deceptive Credences</strong>.</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2021</td>
 <td>Massoni, Gabriela; . <strong>Análise de textos por meio de processos estocásticos na representação word2vec</strong>.</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2021</td>
+<td>IÓCA, Mariana Pavan; ZUANETTI, Daiane Aparecida; . <strong>Selection of SNP markers: Analyzing GAW17 data using different methodologies</strong>. Brazilian Journal of Biometrics</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2021</td>
+<td>Zuanetti, Daiane Aparecida; da Paz, Rosineide Fernando; Rodrigues, Talisson; Mesquita, Esequiel; . <strong>Clustering ultrasonic waves propagation time: A hierarchical polynomial semiparametric approach</strong>. Applied Stochastic Models in Business and Industry</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2021</td>
+<td>Vilar, Giovanna Vendeiro; Esteves, Luis Gustavo; Costa, Mariana Almeida; Hirota, Renata Massami; . <strong>Relatório de análise estatística sobre o projeto “Emergência e desenvolvimento da ação manipulativa de apertar em bebês de 1 a 3 meses de idade”</strong>.</td>
+</tr>
+<tr class="even">
+<td class="pub-year">2021</td>
+<td>Marinho, Caique Barros; Santos, Gabriel Vinícius dos; Esteves, Luís Gustavo; Tótolo, Pedro Luis Freitas; . <strong>Relatório de análise estatística sobre o projeto “Avaliação dos fatores do envelhecimento da população que afetam a administração de medicamentos e desenvolvimento de soluções tecnológicas”</strong>.</td>
+</tr>
+<tr class="odd">
+<td class="pub-year">2021</td>
+<td>Takara, Victor Junji; Esteves, Luís Gustavo; . <strong>Inferência para o modelo Bernoulli na presença de adversários</strong>.</td>
 </tr>
 </tbody>
 </table>
