@@ -33,6 +33,9 @@ Our foundational work aims to create more flexible, powerful, and efficient lear
 - **Network Science & Graph-based Learning**:
   We develop methods for [community detection](https://arxiv.org/abs/2303.05909), [hypothesis testing on graphs](https://arxiv.org/abs/1504.06478), and [network modeling](https://arxiv.org/abs/1908.08880), with applications ranging from EEG brain data to social networks. Current work targets weighted and sparse networks, including [counting communities in weighted stochastic block models](https://arxiv.org/abs/2502.15891), [sparsity-aware models for count-weighted networks](https://arxiv.org/abs/2411.03100), and [normalized likelihood criteria for model selection](https://arxiv.org/abs/2604.10205).
 
+- **Dynamics and Spectra of Complex Networks**:
+  We study how network structure shapes the collective dynamics unfolding on it — from the synchronization of coupled oscillators, surveyed in our review of [the Kuramoto model in complex networks](https://doi.org/10.1016/j.physrep.2015.10.008), to the spectral theory underpinning such processes, including [the effect of clustering heterogeneity on the spectral density of sparse networks](https://doi.org/10.1103/PhysRevE.110.054307). We also bring machine learning to bear on this question, [predicting dynamical observables directly from network structure](https://doi.org/10.1098/rspa.2024.0435), and design new structural descriptors such as [SVD incidence centrality](https://arxiv.org/abs/2602.15736) for directed networks and hypergraphs.
+
 - **High-Dimensional & Nonparametric Methods**:
   We specialize in “large \( p \), small \( n \)” problems, using spectral series, wavelets, and kernel methods. We also design efficient algorithms like [**ExactBoost**](https://proceedings.mlr.press/v151/csillag22a.html) and [**BlockBoost**](https://proceedings.mlr.press/v238/ramos24a.html) for challenging ML tasks.
 
@@ -56,13 +59,13 @@ We are passionate about applying our methods to solve concrete problems. Our col
   [QTL mapping](https://doi.org/10.1534/genetics.115.180802), [feature selection for ALS studies](https://doi.org/10.3390/jpm12081330), and interaction detection in complex traits.
 
 - **Ecology & Environmental Science**:
-  Biodiversity quantification, species composition analysis ([**LDAcov**](https://doi.org/10.1002/ece3.7626)), and population modeling.
+  Biodiversity quantification, species composition analysis ([**LDAcov**](https://doi.org/10.1002/ece3.7626)), and population modeling. Network approaches extend this to ecological and climate systems, showing [how interspecific competition shapes the structural stability of mutualistic networks](https://doi.org/10.1016/j.chaos.2023.113507) and using [evolving climate networks to trace the effects of ENSO and volcanic eruptions on global temperature](https://doi.org/10.1140/epjs/s11734-021-00269-9).
 
 - **Law, Social Science & Sports Analytics**:
-  Quantifying legal [“loss of a chance”](https://doi.org/10.1093/lpr/mgz010), modeling judicial decisions, and [predicting football match outcomes](https://arxiv.org/abs/1705.04356).
+  Quantifying legal [“loss of a chance”](https://doi.org/10.1093/lpr/mgz010), modeling judicial decisions, and [predicting football match outcomes](https://arxiv.org/abs/1705.04356), including [approaches that combine complex networks with machine learning](https://doi.org/10.1093/comnet/cnae043).
 
 - **Computational Neuroscience**:
-  Modeling spiking activity with stochastic chains of variable-length memory: [inferring effective connectivity between neurons](https://doi.org/10.3390/brainsci14050442), [consistently selecting models of functional interaction](https://arxiv.org/abs/2411.08205), and [identifying astrocytic signatures in neuronal recordings](https://doi.org/10.1007/s11571-025-10276-4).
+  Modeling spiking activity with stochastic chains of variable-length memory: [inferring effective connectivity between neurons](https://doi.org/10.3390/brainsci14050442), [consistently selecting models of functional interaction](https://arxiv.org/abs/2411.08205), and [identifying astrocytic signatures in neuronal recordings](https://doi.org/10.1007/s11571-025-10276-4). We also approach the brain as a complex network, relating [structure and function across artificial, zebrafish and human neural systems](https://doi.org/10.1016/j.plrev.2023.04.004).
 
 - **Insurance & Actuarial Science**:
   [Actuarial learning for pension-fund mortality forecasting](https://arxiv.org/abs/2504.05881) and conformal prediction for [frequency–severity modeling](https://doi.org/10.1080/02664763.2025.2567988) of insurance claims.
