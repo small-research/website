@@ -1,0 +1,28 @@
+---
+title: "Prospective Students"
+---
+
+We're always happy to hear from students and researchers interested in statistics, machine learning, and their applications to science and society.
+
+## Who we're looking for
+
+We welcome interest from people with backgrounds in statistics, computer science, mathematics, engineering, or related quantitative fields, at different stages:
+
+::: {.info-card}
+- **Undergraduate students** looking for a scientific initiation (iniciação científica) project.
+- **Master's and PhD applicants** interested in joining our graduate research group.
+- **Postdoctoral researchers** looking for a host lab for a fellowship application.
+- **Visiting researchers and collaborators** working on related problems.
+:::
+
+## How to apply
+
+Most of our students join through the graduate program in Statistics run jointly by UFSCar and USP (Programa Interinstitucional de Pós-Graduação em Estatística, UFSCar–USP), or through undergraduate research programs at UFSCar. If you're interested in:
+
+- **Graduate studies (MSc/PhD)** — apply through the [graduate program](https://www.pipges.ufscar.br/en/front-page)'s regular selection process, and mention which faculty member's work interests you.
+- **Undergraduate research** — reach out directly with your CV/transcript and a short note on what topics interest you.
+- **Postdoc or visiting positions** — reach out directly with your CV; availability depends on ongoing funding and projects.
+
+## Get in touch
+
+Take a look at our [faculty](people.qmd) and their individual research interests, then contact the faculty member directly — let them know your background and which of their research directions you'd like to work on.

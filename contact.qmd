@@ -2,6 +2,18 @@
 title: "Contact"
 ---
 
-If you would like to reach us, please **send an email** to small.ufscar at gmail
+<div class="contact-block">
 
-![](small.png){width=50%}
+<img src="small.png" alt="SMaLL logo">
+
+<div>
+
+If you would like to reach us, please send an email to <a href="mailto:small.ufscar@gmail.com">small.ufscar@gmail.com</a>.
+
+We're happy to hear from prospective students, collaborators, and anyone interested in our research — see the [prospective students](prospective-students.qmd) page if you're looking to join the lab.
+
+You can also find our code and materials on [GitHub](https://github.com/small-research).
+
+</div>
+
+</div>

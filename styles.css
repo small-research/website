@@ -1,1 +1,122 @@
-/* css styles */
+/* ============================================================
+   SMaLL — Statistical Machine Learning Lab
+   Site-wide styles. Brand colors sampled from small.png (logo).
+   ============================================================ */
+
+:root {
+  --small-navy: #0a3d68;
+  --small-navy-dark: #062a49;
+  --small-blue: #3a8dbf;
+  --small-bg-soft: #f7f9fb;
+}
+
+/* Quarto's color-scheme toggle adds/removes "quarto-dark" on <body>
+   when the reader switches to the dark (darkly) theme. */
+body.quarto-dark {
+  --small-navy: #6fb1e0;
+  --small-blue: #59a9d6;
+  --small-bg-soft: #10202e;
+}
+
+/* ---------- Typography & links ---------- */
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--small-blue);
+}
+
+a:hover {
+  color: var(--small-navy);
+}
+
+.navbar-title,
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h2 {
+  border-bottom: 1px solid rgba(10, 61, 104, 0.15);
+  padding-bottom: 0.3rem;
+}
+
+/* ---------- Publications: search box + table ---------- */
+
+.pub-search {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0 1.25rem 0;
+}
+
+.pub-search input#pub-search-input {
+  max-width: 420px;
+}
+
+.pub-search-count {
+  font-size: 0.9em;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table.pub-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table.pub-table tr {
+  border-bottom: 1px solid rgba(127, 127, 127, 0.15);
+}
+
+table.pub-table tr:hover {
+  background-color: var(--small-bg-soft);
+}
+
+table.pub-table td {
+  padding: 0.5rem 0.6rem;
+  vertical-align: top;
+}
+
+table.pub-table td.pub-year {
+  font-weight: 600;
+  color: var(--small-navy);
+  white-space: nowrap;
+  width: 4.5rem;
+}
+
+/* ---------- People grid (faculty / students / alumni / collaborators) ---------- */
+
+table img[width] {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* ---------- Prospective students / contact call-out blocks ---------- */
+
+.info-card {
+  background-color: var(--small-bg-soft);
+  border-left: 4px solid var(--small-blue);
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.contact-block {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-block img {
+  max-width: 220px;
+  height: auto;
+}

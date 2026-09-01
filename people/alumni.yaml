@@ -113,3 +113,31 @@
   affiliation_link: https://ace.illinois.edu/
   picture: "./pictures/flavia_motta.jpg"
   url: "https://lemann.illinois.edu/flavia-castro-motta"
+
+-
+  name: "João Flávio"
+  affiliation: "DEs-UFSCar"
+  affiliation_link: "http://www.des.ufscar.br/"
+  picture: "./pictures/joao_flavio.jpeg"
+  url: "https://www.linkedin.com/in/jo%C3%A3o-fl%C3%A1vio-12a21b77/"
+
+-
+  name: "Lucas Sala"
+  affiliation: "DEs-UFSCar"
+  affiliation_link: "http://www.des.ufscar.br/"
+  picture: "./pictures/lucas_sala.jpeg"
+  url: "http://lattes.cnpq.br/0957976856746333"
+
+-
+  name: "Rafaela Miglinski Lucca"
+  affiliation: "PIPGEs-UFSCar"
+  affiliation_link: "https://www.pipges.ufscar.br/pt-br/front-page"
+  picture: "./pictures/rafaela_lucca.jpg"
+  url: "http://lattes.cnpq.br/5388923248394598"
+
+-
+  name: "Tiago de Melo"
+  affiliation: "ISB-UFAM"
+  affiliation_link: ""
+  picture: "./pictures/tiago_melo.png"
+  url: ""
