@@ -1,0 +1,50 @@
+name: Publish website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Required so quarto can push the rendered site to the gh-pages branch.
+permissions:
+  contents: write
+
+# Never let two publishes race for the gh-pages branch.
+concurrency:
+  group: publish-gh-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # quarto publish needs the gh-pages branch history, not a shallow clone.
+          fetch-depth: 0
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      # research.qmd and people.qmd execute Python at render time, so the
+      # environment from uv.lock has to exist before quarto runs.
+      - name: Install Python dependencies
+        run: uv sync --locked
+
+      - name: Configure git identity for the gh-pages commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Render and publish to gh-pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          QUARTO_PYTHON: ${{ github.workspace }}/.venv/bin/python
