@@ -15,13 +15,13 @@ Our research is grounded in a deep understanding of statistical theory, which al
 A central theme of our research is moving beyond simple point predictions to create AI systems that understand and communicate their own uncertainty. We believe this is essential for applications in science, medicine, and beyond.
 
 - **Uncertainty Quantification & Conformal Prediction**:
-  We develop cutting-edge techniques for creating statistically valid prediction intervals and confidence sets. Our work, including methods like [**CD-split**](https://www.jmlr.org/papers/v23/20-797.html) and [**EPICSCore**](https://proceedings.mlr.press/v286/cruz-cabezas25a.html), provides rigorous, assumption-free uncertainty guarantees via conformal methods, even for complex, high-dimensional data.
+  We develop cutting-edge techniques for creating statistically valid prediction intervals and confidence sets. Our work, including methods like [**CD-split**](https://www.jmlr.org/papers/v23/20-797.html) and [**EPICSCore**](https://proceedings.mlr.press/v286/cruz-cabezas25a.html), provides rigorous, assumption-free uncertainty guarantees via conformal methods, even for complex, high-dimensional data. Recent work broadens this toolkit along several axes: [**CREDO**](https://arxiv.org/abs/2603.06826) builds conformalized credal envelopes that separate epistemic from aleatoric uncertainty, [**LoBoost**](https://arxiv.org/abs/2602.22432) delivers fast model-native local intervals for gradient-boosted trees, [**LOCUS**](https://arxiv.org/abs/2603.01971) targets risk-aware predictions through a distribution-free loss-quantile score, and we extend valid prediction regions to [compositional data](https://arxiv.org/abs/2511.18141) and [skewed responses](https://arxiv.org/abs/2605.16145).
 
 - **Interpretability and Explainable AI (XAI)**:
   We design methods to open the "black box" of complex models like neural networks. Our work on meaningful local explanations (e.g., [**MeLIME**](https://arxiv.org/abs/2009.05818), [**RFFNet**](https://arxiv.org/abs/2211.06410), and [**NLS**](https://arxiv.org/abs/1910.05206)) helps users understand why a model makes a particular decision, fostering trust and enabling model debugging.
 
 - **Model Diagnostics and Calibration**:
-  We create tools for rigorously validating and diagnosing machine learning models. This includes techniques for likelihood-free inference (e.g., [**WALDO**](https://arxiv.org/abs/2205.15680), [**LF2I**](https://arxiv.org/abs/2107.03920)) and diagnostics for conditional density models ([**LaDaR**](https://arxiv.org/abs/2205.14568)), ensuring reliable and well-calibrated probabilistic outputs.
+  We create tools for rigorously validating and diagnosing machine learning models. This includes techniques for likelihood-free inference (e.g., [**WALDO**](https://arxiv.org/abs/2205.15680), [**LF2I**](https://arxiv.org/abs/2107.03920)) and diagnostics for conditional density models ([**LaDaR**](https://arxiv.org/abs/2205.14568)), ensuring reliable and well-calibrated probabilistic outputs. We are extending these ideas to generative models used as scientific simulators ([trustworthy scientific inference](https://arxiv.org/abs/2508.02602)), to locally calibrated credible sets in simulation-based inference ([**CP4SBI**](https://arxiv.org/abs/2508.17077)), and to [rare events, via diagnostic transport maps](https://arxiv.org/abs/2603.11229).
 
 ### Core Methodological Advances in Machine Learning
 
@@ -31,7 +31,7 @@ Our foundational work aims to create more flexible, powerful, and efficient lear
   A cornerstone of our research is the development of nonparametric methods for estimating full outcome distributions given features. Our [**FlexCode**](https://arxiv.org/abs/1704.08095) procedure, used by the Vera C. Rubin Observatory, is one such example applied in astronomy and beyond. More recently, we have been benchmarking and adapting [**tabular foundation models**](https://arxiv.org/abs/2603.26611) for CDE, bringing this new generation of pretrained models to bear on distributional prediction.
 
 - **Network Science & Graph-based Learning**:
-  We develop methods for [community detection](https://arxiv.org/abs/2303.05909), [hypothesis testing on graphs](https://arxiv.org/abs/1504.06478), and [network modeling](https://arxiv.org/abs/1908.08880), with applications ranging from EEG brain data to social networks.
+  We develop methods for [community detection](https://arxiv.org/abs/2303.05909), [hypothesis testing on graphs](https://arxiv.org/abs/1504.06478), and [network modeling](https://arxiv.org/abs/1908.08880), with applications ranging from EEG brain data to social networks. Current work targets weighted and sparse networks, including [counting communities in weighted stochastic block models](https://arxiv.org/abs/2502.15891), [sparsity-aware models for count-weighted networks](https://arxiv.org/abs/2411.03100), and [normalized likelihood criteria for model selection](https://arxiv.org/abs/2604.10205).
 
 - **High-Dimensional & Nonparametric Methods**:
   We specialize in “large \( p \), small \( n \)” problems, using spectral series, wavelets, and kernel methods. We also design efficient algorithms like [**ExactBoost**](https://proceedings.mlr.press/v151/csillag22a.html) and [**BlockBoost**](https://proceedings.mlr.press/v238/ramos24a.html) for challenging ML tasks.
@@ -61,8 +61,14 @@ We are passionate about applying our methods to solve concrete problems. Our col
 - **Law, Social Science & Sports Analytics**:
   Quantifying legal [“loss of a chance”](https://doi.org/10.1093/lpr/mgz010), modeling judicial decisions, and [predicting football match outcomes](https://arxiv.org/abs/1705.04356).
 
+- **Computational Neuroscience**:
+  Modeling spiking activity with stochastic chains of variable-length memory: [inferring effective connectivity between neurons](https://doi.org/10.3390/brainsci14050442), [consistently selecting models of functional interaction](https://arxiv.org/abs/2411.08205), and [identifying astrocytic signatures in neuronal recordings](https://doi.org/10.1007/s11571-025-10276-4).
+
+- **Insurance & Actuarial Science**:
+  [Actuarial learning for pension-fund mortality forecasting](https://arxiv.org/abs/2504.05881) and conformal prediction for [frequency–severity modeling](https://doi.org/10.1080/02664763.2025.2567988) of insurance claims.
+
 - **Materials Science**:  
-  Predicting properties of glass materials to guide new compositions, incorporating uncertainty for robust scientific inference.
+  Predicting properties of glass materials to guide new compositions, [quantifying oxide glass similarity through learned distances](https://doi.org/10.1016/j.jnoncrysol.2026.124303), [building datasets by mining patents](https://arxiv.org/abs/2511.16366), and [automating the microscopic analysis of cement clinker](https://doi.org/10.1016/j.eswa.2025.128552) — always incorporating uncertainty for robust scientific inference.
 
 ### Bayesian Foundations and Logical Coherence
 
@@ -76,7 +82,7 @@ Our approach is deeply Bayesian and committed to logical rigor. We believe this 
 
 ---
 
-Here is a list of our papers from the last 5 years — the complete list can be downloaded <a href="https://github.com/small-research/website/raw/main/references.csv" download>here</a>, and the corresponding BibTeX entries are available <a href="https://github.com/small-research/website/raw/main/references.bib" download>here</a>.
+Here is a list of our papers from the last 5 years — the complete list can be downloaded <a href="https://github.com/small-research/website/raw/main/references.csv" download>here</a>.
 
 
 
