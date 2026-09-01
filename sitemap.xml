@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://small-research.github.io/website/contact.html</loc>
-    <lastmod>2025-04-22T23:25:53.399Z</lastmod>
-  </url>
-  <url>
-    <loc>https://small-research.github.io/website/events/2018-sujinho/index.html</loc>
-    <lastmod>2025-05-17T22:27:24.865Z</lastmod>
-  </url>
-  <url>
-    <loc>https://small-research.github.io/website/people.html</loc>
-    <lastmod>2025-05-17T22:38:16.278Z</lastmod>
-  </url>
-  <url>
-    <loc>https://small-research.github.io/website/events.html</loc>
-    <lastmod>2025-05-17T22:28:44.059Z</lastmod>
-  </url>
-  <url>
     <loc>https://small-research.github.io/website/research.html</loc>
-    <lastmod>2025-06-20T12:26:35.895Z</lastmod>
+    <lastmod>2026-09-01T13:06:47.197Z</lastmod>
   </url>
   <url>
     <loc>https://small-research.github.io/website/index.html</loc>
-    <lastmod>2025-05-17T22:50:59.839Z</lastmod>
+    <lastmod>2026-09-01T10:18:45.479Z</lastmod>
   </url>
   <url>
-    <loc>https://small-research.github.io/website/events/2019-semester/index.html</loc>
-    <lastmod>2025-05-17T22:28:25.569Z</lastmod>
+    <loc>https://small-research.github.io/website/events/2018-sujinho/index.html</loc>
+    <lastmod>2026-09-01T10:18:45.471Z</lastmod>
+  </url>
+  <url>
+    <loc>https://small-research.github.io/website/prospective-students.html</loc>
+    <lastmod>2026-09-01T13:06:27.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://small-research.github.io/website/contact.html</loc>
+    <lastmod>2026-09-01T12:17:20.442Z</lastmod>
+  </url>
+  <url>
+    <loc>https://small-research.github.io/website/events.html</loc>
+    <lastmod>2026-09-01T10:18:45.467Z</lastmod>
   </url>
   <url>
     <loc>https://small-research.github.io/website/events/2025-small/index.html</loc>
-    <lastmod>2025-05-17T22:27:34.009Z</lastmod>
+    <lastmod>2026-09-01T10:18:45.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://small-research.github.io/website/events/2019-semester/index.html</loc>
+    <lastmod>2026-09-01T10:18:45.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://small-research.github.io/website/people.html</loc>
+    <lastmod>2026-09-01T10:18:45.479Z</lastmod>
   </url>
 </urlset>
