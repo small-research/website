@@ -60,3 +60,17 @@
   affiliation_link: "https://www.ime.usp.br"
   picture: "./pictures/ana_paula_cavalcante.png"
   url: "http://lattes.cnpq.br/9176913672109214"
+
+-
+  name: "Mateus Jardim Benvenuti"
+  affiliation: "DEs-UFSCar"
+  affiliation_link: "https://www.des.ufscar.br/"
+  picture: "./pictures/mateus_benvenuti.png"
+  url: "https://benvenutimateus.github.io/"
+
+-
+  name: "Isabela Lika Morioka"
+  affiliation: "DEs-UFSCar"
+  affiliation_link: "https://www.des.ufscar.br/"
+  picture: "./pictures/lika.png"
+  url: "https://www.des.ufscar.br/"
