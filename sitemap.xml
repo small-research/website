@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://small-research.github.io/website/people.html</loc>
-    <lastmod>2026-09-01T15:41:41.871Z</lastmod>
+    <loc>https://small-research.github.io/website/research.html</loc>
+    <lastmod>2026-11-16T19:40:05.934Z</lastmod>
   </url>
   <url>
     <loc>https://small-research.github.io/website/events.html</loc>
-    <lastmod>2026-09-01T15:41:41.866Z</lastmod>
-  </url>
-  <url>
-    <loc>https://small-research.github.io/website/index.html</loc>
-    <lastmod>2026-09-01T15:41:41.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://small-research.github.io/website/events/2019-semester/index.html</loc>
-    <lastmod>2026-09-01T15:41:41.868Z</lastmod>
+    <lastmod>2026-11-16T19:40:05.899Z</lastmod>
   </url>
   <url>
     <loc>https://small-research.github.io/website/events/2018-sujinho/index.html</loc>
-    <lastmod>2026-09-01T15:41:41.867Z</lastmod>
+    <lastmod>2026-11-16T19:40:05.900Z</lastmod>
   </url>
   <url>
-    <loc>https://small-research.github.io/website/events/2025-small/index.html</loc>
-    <lastmod>2026-09-01T15:41:41.868Z</lastmod>
-  </url>
-  <url>
-    <loc>https://small-research.github.io/website/contact.html</loc>
-    <lastmod>2026-09-01T15:41:41.866Z</lastmod>
+    <loc>https://small-research.github.io/website/people.html</loc>
+    <lastmod>2026-11-16T19:40:05.904Z</lastmod>
   </url>
   <url>
     <loc>https://small-research.github.io/website/prospective-students.html</loc>
-    <lastmod>2026-09-01T15:41:41.896Z</lastmod>
+    <lastmod>2026-11-16T19:40:05.933Z</lastmod>
   </url>
   <url>
-    <loc>https://small-research.github.io/website/research.html</loc>
-    <lastmod>2026-09-01T15:41:41.897Z</lastmod>
+    <loc>https://small-research.github.io/website/contact.html</loc>
+    <lastmod>2026-11-16T19:40:05.899Z</lastmod>
+  </url>
+  <url>
+    <loc>https://small-research.github.io/website/events/2019-semester/index.html</loc>
+    <lastmod>2026-11-16T19:40:05.901Z</lastmod>
+  </url>
+  <url>
+    <loc>https://small-research.github.io/website/events/2025-small/index.html</loc>
+    <lastmod>2026-11-16T19:40:05.901Z</lastmod>
+  </url>
+  <url>
+    <loc>https://small-research.github.io/website/index.html</loc>
+    <lastmod>2026-11-16T19:40:05.904Z</lastmod>
   </url>
 </urlset>
